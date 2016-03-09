@@ -16,7 +16,11 @@ public class DatabaseController extends HttpServlet {
         try {
             database.controller.DatabaseController.Connect();
             List<List<Object>> coffeeJoinCountry = database.controller.DatabaseController.getCoffeeTableJoinCountry();
+            List<List<Object>> coffee = database.controller.DatabaseController.getCoffeeTable();
+            List<List<Object>> country = database.controller.DatabaseController.getCountryTable();
             req.setAttribute("coffeeJoinCountry", coffeeJoinCountry);
+            req.setAttribute("country", country);
+            req.setAttribute("coffee", coffee);
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

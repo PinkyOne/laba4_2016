@@ -58,18 +58,44 @@ public class DatabaseController {
         return result;
     }
 
-    public static ResultSet getCoffeeTable() throws SQLException {
+    public static List<List<Object>> getCoffeeTable() throws SQLException {
         Statement statement = conn.createStatement();
         ResultSet res = statement.executeQuery("SELECT * FROM \"coffee\";");
+        List<List<Object>> result = new ArrayList<>();
+        List header = new ArrayList<>();
+        header.add("id");
+        header.add("name");
+        header.add("country_id");
+        result.add(header);
+        while (res.next()) {
+            List tmp = new ArrayList<>();
+            tmp.add(res.getInt("id"));
+            tmp.add(res.getString("name"));
+            tmp.add(res.getInt("country_id"));
+            result.add(tmp);
+        }
         statement.close();
-        return res;
+        return result;
     }
 
-    public static ResultSet getCountryTable() throws SQLException {
+    public static List<List<Object>> getCountryTable() throws SQLException {
         Statement statement = conn.createStatement();
         ResultSet res = statement.executeQuery("SELECT * FROM country;");
+        List<List<Object>> result = new ArrayList<>();
+        List header = new ArrayList<>();
+        header.add("id");
+        header.add("name");
+        header.add("tax");
+        result.add(header);
+        while (res.next()) {
+            List tmp = new ArrayList<>();
+            tmp.add(res.getInt("id"));
+            tmp.add(res.getString("name"));
+            tmp.add(res.getInt("tax"));
+            result.add(tmp);
+        }
         statement.close();
-        return res;
+        return result;
     }
 
     public static void deleteFromCoffee(int id) throws SQLException {

@@ -5,23 +5,54 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%
 
-//    coffeeJoinCountry.
+    //    coffeeJoinCountry.
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<style>
+   ul,li{
+       display: inline-block;
+   }
+</style>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Database</title>
 </head>
 <body>
-<table>
-    <c:forEach items="${coffeeJoinCountry}" var="item">
-        <tr>
-            <c:forEach items="${item}" var="tmp">
-                <td><c:out value="${tmp}"/></td>
+<ul id="menu">
+    <li>
+        <table border="3">
+            <c:forEach items="${coffeeJoinCountry}" var="item">
+                <tr>
+                    <c:forEach items="${item}" var="tmp">
+                        <td><c:out value="${tmp}"/></td>
+                    </c:forEach>
+                </tr>
             </c:forEach>
-        </tr>
-    </c:forEach>
-</table>
+        </table>
+    </li>
+    <li>
+        <table border="2">
+            <c:forEach items="${coffee}" var="item">
+                <tr>
+                    <c:forEach items="${item}" var="tmp">
+                        <td><c:out value="${tmp}"/></td>
+                    </c:forEach>
+                </tr>
+            </c:forEach>
+        </table>
+    </li>
+    <li>
+        <table border="2">
+            <c:forEach items="${country}" var="item">
+                <tr>
+                    <c:forEach items="${item}" var="tmp">
+                        <td><c:out value="${tmp}"/></td>
+                    </c:forEach>
+                </tr>
+            </c:forEach>
+        </table>
+    </li>
+</ul>
 </body>
 </html>
