@@ -1,8 +1,9 @@
 package database.controller;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class DatabaseController {
@@ -14,88 +15,88 @@ public class DatabaseController {
         conn = null;
         Class.forName("org.sqlite.JDBC");
 
-        conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Alex\\Desktop\\laba4jsp\\src\\database\\db.s3db");
-
+        conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Alex\\Documents\\GitHub\\laba4_2016\\laba4jsp\\src\\db.s3db");
+        System.out.println(conn);
         System.out.println("База Подключена!");
     }
 
     // --------Заполнение таблицы--------
-    public static void insertIntoCoffee(String name, int countryId) throws SQLException {
+    public static void insertIntoCoffee(String name, String country) throws SQLException {
         Statement statement = conn.createStatement();
-        if (statement.execute("INSERT INTO coffee (\"name\", \"country_id\") VALUES (" + name + "," + countryId + "); "))
+        JSONArray countryTable = getCountryTable();
+        int countryId = -1;
+        for (int i = 0; i < countryTable.length(); i++) {
+            JSONObject countryJSON = countryTable.getJSONObject(i);
+            if (countryJSON.getString("name").equalsIgnoreCase(country)) {
+                countryId = countryJSON.getInt("id");
+            }
+        }
+        if (statement.execute("INSERT INTO coffee (\"name\", \"country_id\") VALUES (\"" + name + "\"," + countryId + "); "))
             System.out.println("Запись занесена");
         else
             System.out.println("Запись не занесена");
         statement.close();
     }
 
-    public static void insertIntoCountry(String name, String tax) throws SQLException {
+    public static void insertIntoCountry(String name, int tax) throws SQLException {
         Statement statement = conn.createStatement();
-        if (statement.execute("INSERT INTO country (\"name\", \"tax\") VALUES (" + name + "," + tax + "); "))
+        if (statement.execute("INSERT INTO country (\"name\", \"tax\") VALUES (\"" + name + "\"," + tax + "); "))
             System.out.println("Запись занесена");
         else
             System.out.println("Запись не занесена");
         statement.close();
     }
 
-    public static List<List<Object>> getCoffeeTableJoinCountry() throws SQLException {
+    public static JSONArray getCoffeeTableJoinCountry() throws SQLException {
         Statement statement = conn.createStatement();
-        ResultSet res = statement.executeQuery("SELECT coffee.name,country.name AS \"country\",country.tax FROM coffee JOIN country ON coffee.country_id=country.id;");
-        List<List<Object>> result = new ArrayList<>();
-        List header = new ArrayList<>();
-        header.add("name");
-        header.add("country");
-        header.add("tax");
-        result.add(header);
+        ResultSet res = statement.executeQuery("SELECT " +
+                "coffee.name," +
+                "country.name AS \"country\"," +
+                "country.tax " +
+                "FROM coffee " +
+                "JOIN country " +
+                "ON coffee.country_id=country.id;");
+        JSONArray jso = new JSONArray();
         while (res.next()) {
-            List tmp = new ArrayList<>();
-            tmp.add(res.getString("name"));
-            tmp.add(res.getString("country"));
-            tmp.add(res.getInt("tax"));
-            result.add(tmp);
+            JSONObject tmp = new JSONObject();
+            tmp.put("name", res.getString("name"));
+            tmp.put("country", res.getString("country"));
+            tmp.put("tax", res.getInt("tax"));
+            jso.put(tmp);
         }
         statement.close();
-        return result;
+        return jso;
     }
 
-    public static List<List<Object>> getCoffeeTable() throws SQLException {
+    public static JSONArray getCoffeeTable() throws SQLException {
         Statement statement = conn.createStatement();
         ResultSet res = statement.executeQuery("SELECT * FROM \"coffee\";");
-        List<List<Object>> result = new ArrayList<>();
-        List header = new ArrayList<>();
-        header.add("id");
-        header.add("name");
-        header.add("country_id");
-        result.add(header);
+        JSONArray jso = new JSONArray();
+
         while (res.next()) {
-            List tmp = new ArrayList<>();
-            tmp.add(res.getInt("id"));
-            tmp.add(res.getString("name"));
-            tmp.add(res.getInt("country_id"));
-            result.add(tmp);
+            JSONObject tmp = new JSONObject();
+            tmp.put("id", res.getInt("id"));
+            tmp.put("name", res.getString("name"));
+            tmp.put("country_id", res.getInt("country_id"));
+            jso.put(tmp);
         }
         statement.close();
-        return result;
+        return jso;
     }
 
-    public static List<List<Object>> getCountryTable() throws SQLException {
+    public static JSONArray getCountryTable() throws SQLException {
         Statement statement = conn.createStatement();
         ResultSet res = statement.executeQuery("SELECT * FROM country;");
-        List<List<Object>> result = new ArrayList<>();
-        List header = new ArrayList<>();
-        header.add("id");
-        header.add("name");
-        header.add("tax");
-        result.add(header);
+        JSONArray jso = new JSONArray();
         while (res.next()) {
-            List tmp = new ArrayList<>();
-            tmp.add(res.getInt("id"));
-            tmp.add(res.getString("name"));
-            tmp.add(res.getInt("tax"));
-            result.add(tmp);
+            JSONObject tmp = new JSONObject();
+            tmp.put("id", res.getInt("id"));
+            tmp.put("name", res.getString("name"));
+            tmp.put("tax", res.getInt("tax"));
+            jso.put(tmp);
         }
         statement.close();
-        return result;
+        return jso;
     }
 
     public static void deleteFromCoffee(int id) throws SQLException {
