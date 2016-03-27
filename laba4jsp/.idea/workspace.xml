@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8835a3a-136d-4e08-861c-77bc43055cf0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/web/controllers/DbController.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_8_11_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_8_11_21.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/jspLaba_war_exploded/WEB-INF/classes/database/db.s3db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/laba4web/database/db.s3db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/web/controllers/DatabaseController.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/database/db.s3db" afterPath="$PROJECT_DIR$/src/db.s3db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/jspLaba_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/jspLaba_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.s3db" afterPath="$PROJECT_DIR$/src/db.s3db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laba4web.iml" afterPath="$PROJECT_DIR$/laba4web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/jspLaba_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/jspLaba_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/controller/DatabaseController.java" afterPath="$PROJECT_DIR$/src/database/controller/DatabaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
     <ignored path="jspLaba.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,12 +42,14 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33841464">
-              <caret line="129" column="10" selection-start-line="129" selection-start-column="10" selection-end-line="129" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.8230563">
+              <caret line="383" column="54" selection-start-line="383" selection-start-column="54" selection-end-line="383" selection-end-column="54" />
               <folding>
+                <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#1979#3224#0#HTML" expanded="false" />
                 <element signature="e#3270#4023#0#HTML" expanded="false" />
                 <element signature="e#6427#6687#0#HTML" expanded="false" />
+                <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#8220#9624#0#HTML" expanded="false" />
                 <element signature="e#10443#11723#0#HTML" expanded="false" />
               </folding>
@@ -70,10 +61,8 @@
         <entry file="file://$PROJECT_DIR$/src/web/controllers/CountryController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/src/web/controllers/DbController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+              <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -112,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/database/controller/DatabaseController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
               <folding>
                 <marker date="1458855356143" expanded="true" signature="1201:1290" placeholder="INSERT INTO coffee... " />
                 <marker date="1458855356143" expanded="true" signature="1201:1292" placeholder="INSERT INTO coffee... " />
@@ -300,28 +289,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspLaba" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laba4jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1033,12 +1000,12 @@
       <workItem from="1457599859985" duration="191000" />
       <workItem from="1457644155731" duration="5871000" />
       <workItem from="1458282572906" duration="589000" />
-      <workItem from="1458680603882" duration="36505000" />
+      <workItem from="1458680603882" duration="40979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73354000" />
+    <option name="totallyTimeSpent" value="77828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1049,14 +1016,14 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.4941435" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.49676377" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39747635" sideWeight="0.30600291" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32649842" sideWeight="0.5087848" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.49676377" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.49676377" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.49121523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.49676377" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1064,7 +1031,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39747635" sideWeight="0.6939971" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39747635" sideWeight="0.6830161" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1099,9 +1066,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
             <element signature="e#1979#3224#0#HTML" expanded="false" />
             <element signature="e#3270#4023#0#HTML" expanded="false" />
             <element signature="e#6427#6687#0#HTML" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
             <element signature="e#8220#9624#0#HTML" expanded="false" />
             <element signature="e#10443#11723#0#HTML" expanded="false" />
           </folding>
@@ -1158,9 +1127,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
             <element signature="e#1979#3224#0#HTML" expanded="false" />
             <element signature="e#3270#4023#0#HTML" expanded="false" />
             <element signature="e#6427#6687#0#HTML" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
             <element signature="e#8220#9624#0#HTML" expanded="false" />
             <element signature="e#10443#11723#0#HTML" expanded="false" />
           </folding>
@@ -1206,9 +1177,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
             <element signature="e#1979#3224#0#HTML" expanded="false" />
             <element signature="e#3270#4023#0#HTML" expanded="false" />
             <element signature="e#6427#6687#0#HTML" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
             <element signature="e#8220#9624#0#HTML" expanded="false" />
             <element signature="e#10443#11723#0#HTML" expanded="false" />
           </folding>
@@ -1254,9 +1227,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
             <element signature="e#1979#3224#0#HTML" expanded="false" />
             <element signature="e#3270#4023#0#HTML" expanded="false" />
             <element signature="e#6427#6687#0#HTML" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
             <element signature="e#8220#9624#0#HTML" expanded="false" />
             <element signature="e#10443#11723#0#HTML" expanded="false" />
           </folding>
@@ -1336,9 +1311,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
             <element signature="e#1979#3224#0#HTML" expanded="false" />
             <element signature="e#3270#4023#0#HTML" expanded="false" />
             <element signature="e#6427#6687#0#HTML" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
             <element signature="e#8220#9624#0#HTML" expanded="false" />
             <element signature="e#10443#11723#0#HTML" expanded="false" />
           </folding>
@@ -1384,9 +1361,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
             <element signature="e#1979#3224#0#HTML" expanded="false" />
             <element signature="e#3270#4023#0#HTML" expanded="false" />
             <element signature="e#6427#6687#0#HTML" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
             <element signature="e#8220#9624#0#HTML" expanded="false" />
             <element signature="e#10443#11723#0#HTML" expanded="false" />
           </folding>
@@ -1447,9 +1426,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
             <element signature="e#1979#3224#0#HTML" expanded="false" />
             <element signature="e#3270#4023#0#HTML" expanded="false" />
             <element signature="e#6427#6687#0#HTML" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
             <element signature="e#8220#9624#0#HTML" expanded="false" />
             <element signature="e#10443#11723#0#HTML" expanded="false" />
           </folding>
@@ -1477,9 +1458,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
           <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
             <element signature="e#1979#3224#0#HTML" expanded="false" />
             <element signature="e#3270#4023#0#HTML" expanded="false" />
             <element signature="e#6427#6687#0#HTML" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
             <element signature="e#8220#9624#0#HTML" expanded="false" />
             <element signature="e#10443#11723#0#HTML" expanded="false" />
           </folding>
@@ -1507,9 +1490,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
             <element signature="e#1979#3224#0#HTML" expanded="false" />
             <element signature="e#3270#4023#0#HTML" expanded="false" />
             <element signature="e#6427#6687#0#HTML" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
             <element signature="e#8220#9624#0#HTML" expanded="false" />
             <element signature="e#10443#11723#0#HTML" expanded="false" />
           </folding>
@@ -1567,14 +1552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/web/controllers/CoffeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/json-20160212.jar!/org/json/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.259259">
@@ -1583,20 +1560,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/web/controllers/CountryController.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_ajax.googleapis.com_ajax_libs_jquery_1.4_jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-10.039548">
+          <caret line="2103" column="4" selection-start-line="2103" selection-start-column="4" selection-end-line="2103" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/controller/DatabaseController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
           <folding>
             <marker date="1458855356143" expanded="true" signature="1201:1290" placeholder="INSERT INTO coffee... " />
             <marker date="1458855356143" expanded="true" signature="1201:1292" placeholder="INSERT INTO coffee... " />
@@ -1611,6 +1586,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/web/controllers/CoffeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/web/controllers/CountryJoinCoffeeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1622,27 +1605,29 @@
     <entry file="file://$PROJECT_DIR$/src/web/controllers/DbController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_ajax.googleapis.com_ajax_libs_jquery_1.4_jquery.js">
+    <entry file="file://$PROJECT_DIR$/src/web/controllers/CountryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.039548">
-          <caret line="2103" column="4" selection-start-line="2103" selection-start-column="4" selection-end-line="2103" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33841464">
-          <caret line="129" column="10" selection-start-line="129" selection-start-column="10" selection-end-line="129" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.8230563">
+          <caret line="383" column="54" selection-start-line="383" selection-start-column="54" selection-end-line="383" selection-end-column="54" />
           <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
             <element signature="e#1979#3224#0#HTML" expanded="false" />
             <element signature="e#3270#4023#0#HTML" expanded="false" />
             <element signature="e#6427#6687#0#HTML" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
             <element signature="e#8220#9624#0#HTML" expanded="false" />
             <element signature="e#10443#11723#0#HTML" expanded="false" />
           </folding>

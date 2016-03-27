@@ -128,7 +128,6 @@
             })
             delete_s_country += delete_s_option;
         })
-        alert(delete_s_country);
         $('select#deleteCountrySelect')
         // Append the new rows to the body
                 .html(delete_s_country)
