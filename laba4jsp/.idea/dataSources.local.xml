@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Sqlite (Xerial) - db.s3db" uuid="ef267c86-0284-4a19-8aa4-bb68b2286b14">
+    <data-source name="PostgreSQL - postgres@52.38.201.160" uuid="89b628f6-10ee-4183-842b-a2b7adc7c73c">
       <secret-storage>master_key</secret-storage>
-      <auth-required>false</auth-required>
+      <user-name>postgres</user-name>
     </data-source>
   </component>
 </project>

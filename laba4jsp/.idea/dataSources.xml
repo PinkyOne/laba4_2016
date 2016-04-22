@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3570126234">
-    <data-source source="LOCAL" name="Sqlite (Xerial) - db.s3db" uuid="ef267c86-0284-4a19-8aa4-bb68b2286b14">
-      <driver-ref>sqlite.xerial</driver-ref>
+  <component name="DataSourceManagerImpl" format="xml" hash="3878885780">
+    <data-source source="LOCAL" name="PostgreSQL - postgres@52.38.201.160" uuid="89b628f6-10ee-4183-842b-a2b7adc7c73c">
+      <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/src/database/db.s3db</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://52.38.201.160:5432/postgres</jdbc-url>
     </data-source>
   </component>
 </project>

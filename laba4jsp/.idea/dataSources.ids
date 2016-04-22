@@ -1,24 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="Sqlite (Xerial) - db.s3db" uuid="ef267c86-0284-4a19-8aa4-bb68b2286b14">
-    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
-    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
-    <schema name="" catalog=""/>
-    <table name="coffee" schema="" catalog="" type="TABLE">
-      <column name="id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
-      <column name="name" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
-      <column name="country_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
-      <primary-key columns="id"/>
-    </table>
-    <table name="country" schema="" catalog="" type="TABLE">
-      <column name="id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
-      <column name="name" sqlType="TEXT" precision="0" scale="-1" nullable="false" jdbcType="12"/>
-      <column name="tax" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4" def="JzAn"/>
-      <primary-key columns="id"/>
-    </table>
-    <table name="sqlite_sequence" schema="" catalog="" type="TABLE">
-      <column name="name" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
-      <column name="seq" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
-    </table>
+  <data-source name="PostgreSQL - postgres@52.38.201.160" uuid="89b628f6-10ee-4183-842b-a2b7adc7c73c">
+    <database-info product="PostgreSQL" version="9.3.12" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.5">
+      <database id="1" name="postgres"/>
+      <schema id="2" parent="1" name="public">
+        <object-id>2200</object-id>
+        <comment>standard public schema</comment>
+        <introspection-state-number>696</introspection-state-number>
+        <introspection-timestamp>2016-04-22.03:55:10.387</introspection-timestamp>
+      </schema>
+      <sequence id="3" parent="2" name="coffee_seq">
+        <object-id>16386</object-id>
+        <state-number>686</state-number>
+      </sequence>
+      <sequence id="4" parent="2" name="country_seq">
+        <object-id>16388</object-id>
+        <state-number>687</state-number>
+      </sequence>
+      <sequence id="5" parent="2" name="coupage_seq">
+        <object-id>16384</object-id>
+        <state-number>685</state-number>
+      </sequence>
+      <table id="6" parent="2" name="coffee">
+        <object-id>16415</object-id>
+        <state-number>696</state-number>
+      </table>
+      <table id="7" parent="2" name="country">
+        <object-id>16393</object-id>
+        <state-number>696</state-number>
+      </table>
+      <table id="8" parent="2" name="coupage">
+        <object-id>16402</object-id>
+        <state-number>696</state-number>
+      </table>
+      <column id="9" parent="6" name="id">
+        <state-number>696</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer</data-type>
+        <default-expression>nextval(&apos;coffee_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="10" parent="6" name="name">
+        <state-number>696</state-number>
+        <data-type>text</data-type>
+      </column>
+      <column id="11" parent="6" name="coupage_id">
+        <state-number>696</state-number>
+        <data-type>integer</data-type>
+      </column>
+      <column id="12" parent="6" name="country_id">
+        <state-number>696</state-number>
+        <data-type>integer</data-type>
+      </column>
+      <index id="13" parent="6" name="coffee_pkey">
+        <object-id>16422</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="14" parent="6" name="coffee_pkey">
+        <columns>id</columns>
+        <underlying-index>coffee_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="15" parent="6" name="coffee_coupage_id_fkey">
+        <columns>coupage_id</columns>
+        <ref-key>~.coupage.coupage_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="16" parent="6" name="coffee_country_id_fkey">
+        <columns>country_id</columns>
+        <ref-key>~.country.country_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="17" parent="7" name="id">
+        <state-number>689</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer</data-type>
+        <default-expression>nextval(&apos;country_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="18" parent="7" name="name">
+        <state-number>689</state-number>
+        <data-type>text</data-type>
+      </column>
+      <index id="19" parent="7" name="country_pkey">
+        <object-id>16400</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="20" parent="7" name="country_pkey">
+        <columns>id</columns>
+        <underlying-index>country_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="21" parent="8" name="id">
+        <state-number>690</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer</data-type>
+        <default-expression>nextval(&apos;coupage_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="22" parent="8" name="name">
+        <state-number>690</state-number>
+        <data-type>text</data-type>
+      </column>
+      <column id="23" parent="8" name="robusta">
+        <state-number>690</state-number>
+        <data-type>integer</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="24" parent="8" name="arabica">
+        <state-number>690</state-number>
+        <data-type>integer</data-type>
+        <default-expression>100</default-expression>
+      </column>
+      <index id="25" parent="8" name="coupage_pkey">
+        <object-id>16412</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="26" parent="8" name="coupage_pkey">
+        <columns>id</columns>
+        <underlying-index>coupage_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <check id="27" parent="8" name="coupage_check">
+        <columns>robusta
+arabica</columns>
+        <predicate>(((robusta + arabica) = 100) AND (arabica &gt;= 0)) AND (robusta &gt;= 0)</predicate>
+      </check>
+    </database-model>
   </data-source>
 </component>
