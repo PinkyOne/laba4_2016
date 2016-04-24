@@ -13,7 +13,7 @@
 <hl>!!!!!!ПРОИЗОШЛА ОШИБКА!!!!!!</hl>
 <form action="">
     <div>
-        <button name="action" >Назад</button>
+        <button name="action">Назад</button>
     </div>
 </form>
 </body>

@@ -8,11 +8,10 @@ import java.sql.*;
 
 
 public class DatabaseController {
-    public static Connection conn;
-    public static ResultSet resSet;
+    private static Connection conn;
 
     // --------ПОДКЛЮЧЕНИЕ К БАЗЕ ДАННЫХ--------
-    public static void Connect() throws ClassNotFoundException, SQLException {
+    public static void connectDB() throws ClassNotFoundException, SQLException {
         try {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager
@@ -27,37 +26,30 @@ public class DatabaseController {
     }
 
     // --------Заполнение таблицы--------
-    public static void insertIntoCoffee(String name, String country) throws SQLException {
+    public static void insertIntoCoffee(String name, Country country, Coupage coupage) throws SQLException {
         Statement statement = conn.createStatement();
-        JSONArray countryTable = getCountryTable();
-        int countryId = -1;
-        for (int i = 0; i < countryTable.length(); i++) {
-            JSONObject countryJSON = countryTable.getJSONObject(i);
-            if (countryJSON.getString("name").equalsIgnoreCase(country)) {
-                countryId = countryJSON.getInt("id");
-            }
-        }
-        if (statement.execute("INSERT INTO coffee (\"name\", \"country_id\") VALUES (\"" + name + "\"," + countryId + "); "))
+
+        PreparedStatement preparedStatement = conn.prepareStatement("INSERT INTO coffee (name, coupage_id, country_id) VALUES (?,?,?)");
+        preparedStatement.setString(1, name);
+        preparedStatement.setInt(2, coupage.getId());
+        preparedStatement.setInt(3, country.getId());
+
+        // if (statement.execute("INSERT INTO coffee (\"name\", \"country_id\",\"coupage_id\") VALUES (\"" + name + "\"," + countryId + "); "))
+        if (preparedStatement.execute())
             System.out.println("Запись занесена");
         else
             System.out.println("Запись не занесена");
         statement.close();
     }
 
-    public static void insertIntoCountry(String name, int tax) throws SQLException {
-        Statement statement = conn.createStatement();
-        if (statement.execute("INSERT INTO country (\"name\", \"tax\") VALUES (\"" + name + "\"," + tax + "); "))
-            System.out.println("Запись занесена");
-        else
-            System.out.println("Запись не занесена");
-        statement.close();
-    }
-
-    public static JSONArray getCoffeeTableJoinCountry() throws SQLException {
+    public static JSONArray getCoffeeTableJoinCountryJoinCoupage() throws SQLException {
         Statement statement = conn.createStatement();
         ResultSet res = statement.executeQuery("SELECT " +
                 "coffee.name," +
-                "country.name AS \"country\"" +
+                "country.name AS \"country\", " +
+                "coupage.name AS \"coupage\", " +
+                "coupage.arabica AS \"arabica\", " +
+                "coupage.robusta AS \"robusta\" " +
                 "FROM coffee " +
                 "JOIN country " +
                 "ON coffee.country_id=country.id " +
@@ -68,62 +60,68 @@ public class DatabaseController {
             JSONObject tmp = new JSONObject();
             tmp.put("name", res.getString("name"));
             tmp.put("country", res.getString("country"));
+            tmp.put("coupage", res.getString("coupage"));
+            tmp.put("arabica", res.getString("arabica"));
+            tmp.put("robusta", res.getString("robusta"));
             jso.put(tmp);
         }
         statement.close();
         return jso;
     }
 
-    public static JSONArray getCoffeeTable() throws SQLException {
+    public static Brands getCoffeeTable() throws SQLException {
         Statement statement = conn.createStatement();
-        ResultSet res = statement.executeQuery("SELECT * FROM product;");
-        JSONArray jso = new JSONArray();
-
+        ResultSet res = statement.executeQuery("SELECT * FROM coffee;");
+        Brands brands = new Brands();
         while (res.next()) {
-            JSONObject tmp = new JSONObject();
-            tmp.put("id", res.getInt("id"));
-            tmp.put("name", res.getString("name"));
-            tmp.put("country_id", res.getInt("country_id"));
-            jso.put(tmp);
+            Coffee coffee = new Coffee(
+                    res.getInt("id"),
+                    res.getString("name"),
+                    res.getInt("country_id"),
+                    res.getInt("coupage_id"));
+            brands.addCoffee(coffee);
         }
         statement.close();
-        return jso;
+        return brands;
     }
 
-    public static JSONArray getCountryTable() throws SQLException {
+    public static Countries getCountryTable() throws SQLException {
         Statement statement = conn.createStatement();
-        ResultSet res = statement.executeQuery("SELECT * FROM suppliers;");
-        JSONArray jso = new JSONArray();
+        ResultSet res = statement.executeQuery("SELECT * FROM country;");
+        Countries countries = new Countries();
         while (res.next()) {
-            JSONObject tmp = new JSONObject();
-            tmp.put("id", res.getInt("id"));
-            tmp.put("name", res.getString("name"));
-            tmp.put("tax", res.getInt("tax"));
-            jso.put(tmp);
+            Country country = new Country(res.getInt("id"), res.getString("name"));
+            countries.addCountry(country);
         }
         statement.close();
-        return jso;
+        return countries;
     }
 
-    public static void deleteFromCoffee(int id) throws SQLException {
+    public static void deleteFromCoffee(Coffee coffee) throws SQLException {
         Statement statement = conn.createStatement();
-        statement.execute("DELETE FROM coffee WHERE id = " + id + " ;");
-        statement.close();
-    }
-
-    public static void deleteFromCountry(int id) throws SQLException {
-        Statement statement = conn.createStatement();
-        statement.execute("DELETE FROM coffee WHERE country_id = " + id + " ;");
-        statement.execute("DELETE FROM country WHERE id = " + id + " ;");
+        statement.execute("DELETE FROM coffee WHERE id = " + coffee.getId() + " ;");
         statement.close();
     }
 
     // --------Закрытие--------
-    public static void CloseDB() throws ClassNotFoundException, SQLException {
+    public static void closeDB() throws SQLException {
         conn.close();
-        resSet.close();
-
         System.out.println("Соединения закрыты");
     }
 
+    public static Coupages getCoupageTable() throws SQLException {
+        Statement statement = conn.createStatement();
+    ResultSet res = statement.executeQuery("SELECT * FROM coupage;");
+    Coupages coupages = new Coupages();
+    while (res.next()) {
+        Coupage coupage = new Coupage(
+                res.getInt("id"),
+                res.getString("name"),
+                res.getInt("robusta"),
+                res.getInt("arabica"));
+        coupages.addCoffee(coupage);
+    }
+    statement.close();
+    return coupages;
+    }
 }

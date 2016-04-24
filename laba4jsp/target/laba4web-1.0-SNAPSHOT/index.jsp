@@ -380,7 +380,7 @@
 
 <head>
     <title>The Coffee Shop</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" charset="utf-8"/>
     <link href="default.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -397,125 +397,88 @@
     <!-- end #menu -->
     <div id="header">
         <h1>The Coffee Shop</h1>
-        <h2><a href="#">Free CSS Templates</a></h2>
     </div>
     <!-- end #header -->
     <div id="content">
         <div id="posts">
             <div class="post">
-                <h2 class="title">Welcome to The Coffee Shop!</h2>
-                <div class="story">
 
-                    <ul id="menu">
-                        <li>
-                            <table border="3" id="coffeeJoinCountryTable">
-                                <thead>
+                <ul>
+                    <li>
+                        <h2 class="title">Welcome to The Coffee Shop!</h2>
+                    </li>
+                    <li>
+                        <table border="3" id="coffeeJoinCountryTable">
+                            <thead>
+                            <tr>
+                                <th>Наименование</th>
+                                <th>Страна производства</th>
+                                <th>Купаж</th>
+                                <th>Арабика</th>
+                                <th>Робуста</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <c:forEach items="${coffeeJoinCountry}" var="item">
                                 <tr>
-                                    <th>Coffee</th>
-                                    <th>Country</th>
-                                    <th>Tax</th>
+                                    <td>${item.get(1)}</td>
+                                    <td>${item.get(0)}</td>
+                                    <td>${item.get(4)}</td>
+                                    <td>${item.get(2)}</td>
+                                    <td>${item.get(3)}</td>
                                 </tr>
-                                </thead>
-                                <tbody>
-                                <c:forEach items="${coffeeJoinCountry}" var="item">
-                                    <tr>
-                                        <td>${item.get(1)}</td>
-                                        <td>${item.get(0)}</td>
-                                        <td>${item.get(2)}</td>
-                                    </tr>
-                                </c:forEach>
-                                </tbody>
-                            </table>
-                        </li>
-                        <li>
-                            <table border="2" id="coffeeTable">
-                                <thead>
-                                <tr>
-                                    <th>id</th>
-                                    <th>Name</th>
-                                    <th>country_id</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <c:forEach items="${coffee}" var="item">
-                                    <tr>
-                                        <td>${item.get(1)}</td>
-                                        <td>${item.get(0)}</td>
-                                        <td>${item.get(2)}</td>
-                                    </tr>
-                                </c:forEach>
-                                </tbody>
-                            </table>
-                        </li>
-                        <li>
-                            <table border="2" id="countryTable">
-                                <thead>
-                                <tr>
-                                    <th>id</th>
-                                    <th>Name</th>
-                                    <th>Tax</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <c:forEach items="${country}" var="item">
-                                    <tr>
-                                        <td>${item.get(2)}</td>
-                                        <td>${item.get(0)}</td>
-                                        <td>${item.get(1)}</td>
-                                    </tr>
-                                </c:forEach>
-                                </tbody>
-                            </table>
-                        </li>
-                    </ul>
-                    <form action="" method="post" id="addCoffeeForm">
-                        <div>
-                            <input class="addCoffeeAction" type="text" name="coffeeName" value="<%= coffeeName %>"/>
-                            <br/>
-                            <select class="addCoffeeAction" name="country_name" id="countryNameSelect">
-                                <c:forEach items="${country}" var="item">
-                                    <option><c:out value="${item.get(0)}"/></option>
-                                </c:forEach>
-                            </select>
-                            <br/>
-                            <button class="addCoffeeAction" name="action" value="addToCoffee">Добавить запись</button>
-                        </div>
-                    </form>
-                    <form action="" method="post" id="deleteCoffeeForm">
-                        <div>
-                            <br/>
-                            <br/>
-                            <select class="deleteCoffeeAction" name="coffee_id" id="deleteCoffeeSelect">
-                                <c:forEach items="${coffee}" var="item">
-                                    <option><c:out value="${item.get(1)}"/></option>
-                                </c:forEach>
-                            </select>
-                            <br/>
-                            <button class="deleteCoffeeAction" name="action" value="deleteCoffee">Удалить запись
-                            </button>
-                        </div>
-                    </form>
-                    <%--<form action="" id="addCountryForm">--%>
-                        <%--<div>--%>
-                            <%--<input class="countryAddInput" type="text" name="countryName" value="<%= countryName %>"/>--%>
-                            <%--<br/>--%>
-                            <%--<input class="countryAddInput" type="text" name="tax" value="<%= tax %>"/>--%>
-                            <%--<br/>--%>
-                            <%--<button class="countryAddInput" name="action" value="addToCountry">Добавить запись</button>--%>
-                            <%--<br/>--%>
-                        <%--</div>--%>
-                    <%--</form>--%>
-                    <%--<form action="" id="deleteCountryForm">--%>
-                        <%--<br/>--%>
-                        <%--<select class="countryDeleteInput" name="country_id" id="deleteCountrySelect">--%>
-                            <%--<c:forEach items="${country}" var="item">--%>
-                                <%--<option><c:out value="${item.get(2)}"/></option>--%>
-                            <%--</c:forEach>--%>
-                        <%--</select>--%>
-                        <%--<br/>--%>
-                        <%--<button class="countryDeleteInput" name="action" value="deleteCountry">Удалить запись</button>--%>
-                    <%--</form>--%>
-                </div>
+                            </c:forEach>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <form action="" method="post" id="addCoffeeForm">
+                            <div>
+                                <p>
+                                    <input class="addCoffeeAction" type="text" name="coffeeName"
+                                           value="<%= coffeeName %>"/>
+                                </p>
+                                <p>
+                                    <select class="addCoffeeAction" name="country_name" id="countryNameSelect">
+                                        <c:forEach items="${country}" var="item">
+                                            <option><c:out value="${item.get(0)}"/></option>
+                                        </c:forEach>
+                                    </select>
+                                </p>
+                                <p>
+                                    <select class="addCoffeeAction" name="coupage_name" id="coupageNameSelect">
+                                        <c:forEach items="${coupage}" var="item">
+                                            <option><c:out value="${item.get(0)}"/></option>
+                                        </c:forEach>
+                                    </select>
+                                </p>
+                                <p>
+                                    <button class="addCoffeeAction" name="action" value="addToCoffee">
+                                        Добавить запись
+                                    </button>
+                                </p>
+                            </div>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="" method="post" id="deleteCoffeeForm">
+                            <div>
+                                <p>
+                                    <select class="deleteCoffeeAction" name="coffee_name" id="deleteCoffeeSelect">
+                                        <c:forEach items="${coffee}" var="item">
+                                            <option><c:out value="${item.get(1)}"/></option>
+                                        </c:forEach>
+                                    </select>
+                                </p>
+                                <p>
+                                    <button class="deleteCoffeeAction" name="action" value="deleteCoffee">
+                                        Удалить запись
+                                    </button>
+                                </p>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
             </div>
         </div>
         <!-- end #posts -->

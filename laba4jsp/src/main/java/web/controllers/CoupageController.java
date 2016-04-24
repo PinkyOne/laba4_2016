@@ -1,6 +1,6 @@
 package web.controllers;
 
-import database.controller.Brands;
+import database.controller.Coupages;
 import database.controller.DatabaseController;
 
 import javax.servlet.ServletException;
@@ -15,17 +15,17 @@ import java.sql.SQLException;
 import static database.controller.DatabaseController.closeDB;
 import static database.controller.DatabaseController.connectDB;
 
-@WebServlet(name = "coffee", value = "/coffee")
-public class CoffeeController extends HttpServlet {
+@WebServlet(name = "coupage", value = "/coupage")
+public class CoupageController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
             resp.setContentType("application/json");
             connectDB();
-            Brands coffee = DatabaseController.getCoffeeTable();
+            Coupages coupages = DatabaseController.getCoupageTable();
             closeDB();
             PrintWriter writer = resp.getWriter();
-            writer.print(coffee);
+            writer.print(coupages);
             writer.flush();
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();

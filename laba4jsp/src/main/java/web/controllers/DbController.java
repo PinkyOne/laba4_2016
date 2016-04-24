@@ -1,5 +1,9 @@
 package web.controllers;
 
+import database.controller.Brands;
+import database.controller.Countries;
+import database.controller.Coupages;
+import database.controller.DatabaseController;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -13,22 +17,28 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static database.controller.DatabaseController.*;
+
 @WebServlet(name = "db", value = "/db")
 public class DbController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-            database.controller.DatabaseController.Connect();
+            connectDB();
             List<List<Object>> coffeeJoinCountry = genList(
-                    database.controller.DatabaseController.getCoffeeTableJoinCountry());
-            List<List<Object>> coffee = genList(
-                    database.controller.DatabaseController.getCoffeeTable());
-            List<List<Object>> country = genList(
-                    database.controller.DatabaseController.getCountryTable());
+                    database.controller.DatabaseController.getCoffeeTableJoinCountryJoinCoupage());
             req.setAttribute("coffeeJoinCountry", coffeeJoinCountry);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+            List<List<Object>> country = genList(
+                    getCountryTable().toJSONObject().getJSONArray("countries"));
+            req.setAttribute("country", country);
+            List<List<Object>> coupage = genList(
+                    getCoupageTable().toJSONObject().getJSONArray("coupages"));
+            req.setAttribute("coupage", coupage);
+            List<List<Object>> coffee = genList(
+                    getCoffeeTable().toJSONObject().getJSONArray("brands"));
+            req.setAttribute("coffee", coffee);
+            closeDB();
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         req.getRequestDispatcher("/index.jsp").forward(req, resp);
@@ -51,26 +61,32 @@ public class DbController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action;
         action = req.getParameter("action");
+        req.setCharacterEncoding("UTF-8");
         if (action == null) action = "";
         try {
             switch (action) {
                 case "addToCoffee": {
-                    database.controller.DatabaseController.insertIntoCoffee(req.getParameter("coffeeName"), req.getParameter("country_name"));
+                    connectDB();
+                    Countries countries = getCountryTable();
+                    Coupages coupages = getCoupageTable();
+
+                    String countryName = req.getParameter("country_name");
+                    String coupageName = req.getParameter("coupage_name");
+                    String text = new String(coupageName.getBytes("ISO-8859-1"), "UTF-8");
+                    database.controller.DatabaseController.insertIntoCoffee(
+                            req.getParameter("coffeeName"),
+                            countries.getCountry(countryName),
+                            coupages.getCoupage(text));
+                    closeDB();
                 }
                 break;
                 case "deleteCoffee": {
-                    database.controller.DatabaseController.deleteFromCoffee(Integer.parseInt(req.getParameter("coffee_id")));
-                }
-                break;
-                case "addToCountry": {
-                    database.controller.DatabaseController.insertIntoCountry(req.getParameter("countryName"),
-                            Integer.parseInt(req.getParameter("tax")));
-//                    req.getRequestDispatcher("/country").forward(req, resp);
-                }
-                break;
-                case "deleteCountry": {
-                    database.controller.DatabaseController.deleteFromCountry(Integer.parseInt(req.getParameter("country_id")));
-//                    req.getRequestDispatcher("/country").forward(req, resp);
+                    String name = new String(req.getParameter("coffee_name").getBytes("ISO-8859-1"), "UTF-8");
+                    connectDB();
+                    Brands brands = DatabaseController.getCoffeeTable();
+
+                    database.controller.DatabaseController.deleteFromCoffee(brands.getCoffee(name));
+                    closeDB();
                 }
                 break;
                 default: {
