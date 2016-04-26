@@ -8,40 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc33a729-1afb-4365-89c1-051d5246c44e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/index2.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/WEB-INF/lib/json-20140107.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/WEB-INF/lib/postgresql-9.4.1208.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/error.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/images/img01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/images/img02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/images/img03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/images/img04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/images/img05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/images/img06.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/images/img07.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/images/img08.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/images/img09.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/images/spacer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/index2.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/lib/json-20140107.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/lib/postgresql-9.4.1208.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java" afterPath="$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/web/controllers/CountryJoinCoffeeController.java" afterPath="$PROJECT_DIR$/src/main/java/web/controllers/CountryJoinCoffeeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/web/controllers/DbController.java" afterPath="$PROJECT_DIR$/src/main/java/web/controllers/DbController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/main.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT/index.jsp" afterPath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT/index.jsp" />
     </list>
     <ignored path="laba4web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CountryJoinCoffeeController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CountryJoinCoffeeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/CountryJoinCoffeeController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -231,11 +200,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -303,9 +272,9 @@
         <option value="$PROJECT_DIR$/src/main/java/database/controller/Brands.java" />
         <option value="$PROJECT_DIR$/src/main/java/web/controllers/DbController.java" />
         <option value="$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/scripts/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/web/controllers/CountryJoinCoffeeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/main.js" />
       </list>
     </option>
   </component>
@@ -387,6 +356,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="laba4jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1266,16 +1249,16 @@
       <workItem from="1461509576138" duration="8301000" />
       <workItem from="1461523666270" duration="6283000" />
       <workItem from="1461627051661" duration="2602000" />
-      <workItem from="1461693305479" duration="13115000" />
+      <workItem from="1461693305479" duration="13857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47241000" />
+    <option name="totallyTimeSpent" value="47983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1291,7 +1274,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1933657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1933657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15614887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1300,7 +1283,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29642445" sideWeight="0.4935275" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29642445" sideWeight="0.4935275" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1794,14 +1777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1838,6 +1813,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>

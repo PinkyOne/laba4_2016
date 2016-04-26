@@ -7,7 +7,7 @@ $(document).ready(function () {
     function onDbRequestSuccess(resp) {
         var refreshTableOptions = {
             type: "get",
-            url: "/coffeeJoin", //this is my servlet
+            url: "/laba/coffeeJoin", //this is my servlet
             success: function (response) {
                 onCountryRequestSuccess(response);
             }
@@ -30,7 +30,7 @@ $(document).ready(function () {
 
         var options = {
             type: "post",
-            url: "/db", //this is my servlet
+            url: "/laba/db", //this is my servlet
             data: ajax_data,
             success: function (response) {
                 onDbRequestSuccess(response);
@@ -52,7 +52,7 @@ $(document).ready(function () {
 
         var options = {
             type: "post",
-            url: "/db", //this is my servlet
+            url: "/laba/db", //this is my servlet
             data: ajax_data,
             success: function (response) {
                 onDbRequestSuccess(response);
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
         var options = {
             type: "post",
-            url: "/db", //this is my servlet
+            url: "/laba/db", //this is my servlet
             data: ajax_data,
             success: function (response) {
                 onDbRequestSuccess(response);
