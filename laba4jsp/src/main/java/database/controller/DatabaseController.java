@@ -8,7 +8,45 @@ import java.sql.*;
 
 
 public class DatabaseController {
+    public enum SortType {
+        AZ_NAME("A-Z name"),
+        ZA_NAME("Z-A name"),
+        AZ__COUNTRY("A-Z country"),
+        ZA__COUNTRY("Z-A country"),
+        ARABICA_INCREASE("arabica increase"),
+        ARABICA_DECREASE("arabica decrease");
+        private String value;
+
+        SortType(String s) {
+            value = s;
+        }
+
+        String getValue() {
+            return value;
+        }
+
+        public static SortType getValueS(String sortType) {
+            for (SortType type :
+                    values()) {
+                if (type.value.equals(sortType)) {
+                    return type;
+                }
+            }
+            return AZ_NAME;
+        }
+    }
+
+    public static void setSortType(SortType sortType) {
+        DatabaseController.sortType = sortType;
+    }
+
     private static Connection conn;
+
+    public static SortType getSortType() {
+        return sortType;
+    }
+
+    private static SortType sortType = SortType.AZ_NAME;
 
     // --------ПОДКЛЮЧЕНИЕ К БАЗЕ ДАННЫХ--------
     public static void connectDB() throws ClassNotFoundException, SQLException {
@@ -30,6 +68,7 @@ public class DatabaseController {
         conn.close();
         System.out.println("Соединения закрыты");
     }
+
     // --------Заполнение таблицы--------
     public static void insertIntoCoffee(String name, Country country, Coupage coupage) throws SQLException {
         Statement statement = conn.createStatement();
@@ -49,6 +88,44 @@ public class DatabaseController {
 
     public static JSONArray getCoffeeTableJoinCountryJoinCoupage() throws SQLException {
         Statement statement = conn.createStatement();
+        String sortColumn = "", sort = "";
+
+        switch (sortType) {
+            case AZ_NAME: {
+                sort = " ASC";
+                sortColumn = "name";
+            }
+            break;
+            case ZA_NAME: {
+                sort = " DESC";
+                sortColumn = "name";
+            }
+            break;
+            case AZ__COUNTRY: {
+                sort = " ASC";
+                sortColumn = "\"country\"";
+            }
+            break;
+            case ZA__COUNTRY: {
+                sort = " DESC";
+                sortColumn = "\"country\"";
+            }
+            break;
+            case ARABICA_INCREASE: {
+                sort = " ASC";
+                sortColumn = "\"arabica\"";
+            }
+            break;
+            case ARABICA_DECREASE: {
+                sort = " DESC";
+                sortColumn = "\"arabica\"";
+            }
+            break;
+            default: {
+            }
+            break;
+        }
+        String sortOrder = sortColumn + sort;
         ResultSet res = statement.executeQuery("SELECT " +
                 "coffee.name," +
                 "country.name AS \"country\", " +
@@ -59,7 +136,8 @@ public class DatabaseController {
                 "JOIN country " +
                 "ON coffee.country_id=country.id " +
                 "JOIN coupage " +
-                "ON coffee.coupage_id=coupage.id;");
+                "ON coffee.coupage_id=coupage.id " +
+                "ORDER BY " + sortOrder + ";");
         JSONArray jso = new JSONArray();
         while (res.next()) {
             JSONObject tmp = new JSONObject();
@@ -111,17 +189,17 @@ public class DatabaseController {
 
     public static Coupages getCoupageTable() throws SQLException {
         Statement statement = conn.createStatement();
-    ResultSet res = statement.executeQuery("SELECT * FROM coupage;");
-    Coupages coupages = new Coupages();
-    while (res.next()) {
-        Coupage coupage = new Coupage(
-                res.getInt("id"),
-                res.getString("name"),
-                res.getInt("robusta"),
-                res.getInt("arabica"));
-        coupages.addCoffee(coupage);
-    }
-    statement.close();
-    return coupages;
+        ResultSet res = statement.executeQuery("SELECT * FROM coupage;");
+        Coupages coupages = new Coupages();
+        while (res.next()) {
+            Coupage coupage = new Coupage(
+                    res.getInt("id"),
+                    res.getString("name"),
+                    res.getInt("robusta"),
+                    res.getInt("arabica"));
+            coupages.addCoffee(coupage);
+        }
+        statement.close();
+        return coupages;
     }
 }

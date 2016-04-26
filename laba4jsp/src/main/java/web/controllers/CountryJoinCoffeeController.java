@@ -2,6 +2,7 @@ package web.controllers;
 
 import database.controller.DatabaseController;
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,8 +25,12 @@ public class CountryJoinCoffeeController extends HttpServlet {
             JSONArray coffeeJoinCountry = DatabaseController.getCoffeeTableJoinCountryJoinCoupage();
             closeDB();
             resp.setContentType("application/json");
+            req.setCharacterEncoding("UTF-8");
+            resp.setCharacterEncoding("UTF-8");
             PrintWriter writer = resp.getWriter();
-            writer.print(coffeeJoinCountry);
+            JSONObject jsonObject=new JSONObject();
+            jsonObject.put("data",coffeeJoinCountry);
+            writer.print(jsonObject);
             writer.flush();
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();

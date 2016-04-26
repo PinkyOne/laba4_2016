@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseColorSettings">
+    <colors>
+      <entry key="coffee/public/postgres/89b628f6-10ee-4183-842b-a2b7adc7c73c:TABLE" value="Blue" />
+      <entry key="country/public/postgres/89b628f6-10ee-4183-842b-a2b7adc7c73c:TABLE" value="Orange" />
+    </colors>
+  </component>
+</project>

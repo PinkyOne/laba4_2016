@@ -81,12 +81,18 @@ public class DbController extends HttpServlet {
                 }
                 break;
                 case "deleteCoffee": {
-                    String name = new String(req.getParameter("coffee_name").getBytes("ISO-8859-1"), "UTF-8");
+                    String name = new String(req.getParameter("coffee_name")
+                            .getBytes("ISO-8859-1"), "UTF-8");
                     connectDB();
                     Brands brands = DatabaseController.getCoffeeTable();
-
                     database.controller.DatabaseController.deleteFromCoffee(brands.getCoffee(name));
                     closeDB();
+                }
+                break;
+                case "updateSort": {
+                    String sortType = new String(req.getParameter("sortType")
+                            .getBytes("ISO-8859-1"), "UTF-8");
+                    DatabaseController.setSortType(DatabaseController.SortType.getValueS(sortType));
                 }
                 break;
                 default: {

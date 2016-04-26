@@ -12,7 +12,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-
+<script src="scripts/main.js" charset="utf-8"></script>
 
 
 <style>
@@ -126,13 +126,18 @@
                         <form action="" method="post" id="sort">
                             <div>
                                 <p>
-                                    <select class="updateSort" name="coffee_name" id="sortSelect">
-                                        <option></option>
+                                    <select class="updateSort" name="sortType" id="sortSelect">
+                                        <option>A-Z name</option>
+                                        <option>Z-A name</option>
+                                        <option>A-Z country</option>
+                                        <option>Z-A country</option>
+                                        <option>arabica increase</option>
+                                        <option>arabica decrease</option>
                                     </select>
                                 </p>
                                 <p>
                                     <button class="updateSort" name="action" value="updateSort">
-                                       Применить
+                                        Применить
                                     </button>
                                 </p>
                             </div>
@@ -192,16 +197,20 @@
 <!-- end #footer -->
 
 <script id="coffee-table-template" type="text/x-handlebars-template">
-    {{#each coffeeResponse}}
-        <tr>
-            <td>{{name}}</td>
-            <td>{{country}}</td>
-            <td>{{coupage}}</td>
-            <td>{{arabica}}</td>
-            <td>{{robusta}}</td>
-        </tr>
+    {{#each data}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{country}}</td>
+        <td>{{coupage}}</td>
+        <td>{{arabica}}</td>
+        <td>{{robusta}}</td>
+    </tr>
     {{/each}}
 </script>
-
+<script id="select-template" type="text/x-handlebars-template">
+    {{#each data}}
+    <option>{{name}}</option>
+    {{/each}}
+</script>
 </body>
 </html>
