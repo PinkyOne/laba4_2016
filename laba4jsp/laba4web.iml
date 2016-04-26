@@ -28,5 +28,7 @@
     <orderEntry type="library" name="json-20140107" level="project" />
     <orderEntry type="library" name="jstl-1.2" level="project" />
     <orderEntry type="library" name="postgresql-9.4.1208" level="project" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="handlebars" level="application" />
   </component>
 </module>

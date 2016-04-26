@@ -30,14 +30,14 @@
                         success: function (data) {
                             refreshCountry(data)
                         }
-                    })
+                    });
                     $.ajax({
                         type: "get",
                         url: "/country", //this is my servlet
                         success: function (data) {
                             refresh_CountryDeleteSelect(data)
                         }
-                    })
+                    });
                     $.ajax({
                         type: "get",
                         url: "/country", //this is my servlet
@@ -76,7 +76,7 @@
                         break;
                 }
 
-            })
+            });
             tbl_row = id + name_c + tax;
             tbl_body += "<tr>" + tbl_row + "</tr>";
         });
@@ -102,7 +102,7 @@
                         break;
                 }
 
-            })
+            });
             delete_s_country += delete_s_option;
         });
         $('select#countryNameSelect')
@@ -126,9 +126,9 @@
                         break;
                 }
 
-            })
+            });
             delete_s_country += delete_s_option;
-        })
+        });
         $('select#deleteCountrySelect')
         // Append the new rows to the body
                 .html(delete_s_country)
@@ -154,28 +154,28 @@
                         success: function (data) {
                             refreshCountry(data)
                         }
-                    })
+                    });
                     $.ajax({
                         type: "get",
                         url: "/country", //this is my servlet
                         success: function (data) {
                             refresh_CountryDeleteSelect(data)
                         }
-                    })
+                    });
                     $.ajax({
                         type: "get",
                         url: "/country", //this is my servlet
                         success: function (data) {
                             refresh_CountryNameSelect(data)
                         }
-                    })
+                    });
                     $.ajax({
                         type: "get",
                         url: "/coffee", //this is my servlet
                         success: function (data) {
                             refreshCoffeeTable(data);
                         }
-                    })
+                    });
                     $.ajax({
                         type: "get",
                         url: "/coffeeJoin", //this is my servlet
@@ -207,14 +207,14 @@
                         success: function (data) {
                             refreshCoffeeTable(data);
                         }
-                    })
+                    });
                     $.ajax({
                         type: "get",
                         url: "/coffee", //this is my servlet
                         success: function (data) {
                             refresh_deleteCoffeeSelect(data);
                         }
-                    })
+                    });
 
                     $.ajax({
                         type: "get",
@@ -257,7 +257,7 @@
                         break;
                 }
 
-            })
+            });
             tbl_row = id + name_c + country_id;
             tbl_body += "<tr>" + tbl_row + "</tr>";
         });
@@ -282,7 +282,7 @@
                     }
                         break;
                 }
-            })
+            });
             select_coffee += select_opt;
         });
         $('select#deleteCoffeeSelect')
@@ -298,8 +298,10 @@
         $.each(data, function () {
             var tbl_row = "";
             var name = "";
-            var tax = "";
             var country = "";
+            var coupage = "";
+            var arabica = "";
+            var robusta = "";
             $.each(this, function (k, v) {
                 switch (k) {
                     case "name":
@@ -307,20 +309,30 @@
                         name = "<td>" + v + "</td>";
                     }
                         break;
-                    case "tax":
-                    {
-                        tax = "<td>" + v + "</td>";
-                    }
-                        break;
                     case "country":
                     {
                         country = "<td>" + v + "</td>";
                     }
                         break;
+                    case "coupage":
+                    {
+                        coupage = "<td>" + v + "</td>";
+                    }
+                        break;
+                    case "arabica":
+                    {
+                        arabica = "<td>" + v + "</td>";
+                    }
+                        break;
+                    case "robusta":
+                    {
+                        robusta = "<td>" + v + "</td>";
+                    }
+                        break;
                 }
 
-            })
-            tbl_row = name + country + tax;
+            });
+            tbl_row = name + country + coupage + arabica + robusta;
             tbl_body += "<tr>" + tbl_row + "</tr>";
         });
         $('table#coffeeJoinCountryTable tbody')
@@ -349,14 +361,14 @@
                         success: function (data) {
                             refreshCoffeeTable(data);
                         }
-                    })
+                    });
                     $.ajax({
                         type: "get",
                         url: "/coffee", //this is my servlet
                         success: function (data) {
                             refresh_deleteCoffeeSelect(data);
                         }
-                    })
+                    });
                     $.ajax({
                         type: "get",
                         url: "/coffeeJoin", //this is my servlet

@@ -10,6 +10,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 
 <script type="text/javascript">
@@ -485,6 +486,22 @@
                                 <p>
                                     <button class="deleteCoffeeAction" name="action" value="deleteCoffee">
                                         Удалить запись
+                                    </button>
+                                </p>
+                            </div>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="" method="post" id="sort">
+                            <div>
+                                <p>
+                                    <select class="updateSort" name="coffee_name" id="sortSelect">
+                                        <option></option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <button class="updateSort" name="action" value="updateSort">
+                                       Применить
                                     </button>
                                 </p>
                             </div>

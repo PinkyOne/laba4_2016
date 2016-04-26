@@ -25,6 +25,11 @@ public class DatabaseController {
         System.out.println("Opened database successfully");
     }
 
+    // --------Закрытие--------
+    public static void closeDB() throws SQLException {
+        conn.close();
+        System.out.println("Соединения закрыты");
+    }
     // --------Заполнение таблицы--------
     public static void insertIntoCoffee(String name, Country country, Coupage coupage) throws SQLException {
         Statement statement = conn.createStatement();
@@ -103,11 +108,6 @@ public class DatabaseController {
         statement.close();
     }
 
-    // --------Закрытие--------
-    public static void closeDB() throws SQLException {
-        conn.close();
-        System.out.println("Соединения закрыты");
-    }
 
     public static Coupages getCoupageTable() throws SQLException {
         Statement statement = conn.createStatement();
