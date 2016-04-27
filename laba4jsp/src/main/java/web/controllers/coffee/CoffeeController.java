@@ -1,8 +1,7 @@
-package web.controllers;
+package web.controllers.coffee;
 
+import database.controller.coffee.Brands;
 import database.controller.DatabaseController;
-import org.json.JSONArray;
-import org.json.JSONObject;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,21 +15,17 @@ import java.sql.SQLException;
 import static database.controller.DatabaseController.closeDB;
 import static database.controller.DatabaseController.connectDB;
 
-@WebServlet(name = "coffeeJoin", value = "/coffeeJoin")
-public class CountryJoinCoffeeController extends HttpServlet {
+@WebServlet(name = "coffee", value = "/coffee")
+public class CoffeeController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-            connectDB();
-            JSONArray coffeeJoinCountry = DatabaseController.getCoffeeTableJoinCountryJoinCoupage();
-            closeDB();
             resp.setContentType("application/json");
-            req.setCharacterEncoding("UTF-8");
-            resp.setCharacterEncoding("UTF-8");
+            connectDB();
+            Brands coffee = DatabaseController.getCoffeeTable();
+            closeDB();
             PrintWriter writer = resp.getWriter();
-            JSONObject jsonObject=new JSONObject();
-            jsonObject.put("data",coffeeJoinCountry);
-            writer.print(jsonObject);
+            writer.print(coffee);
             writer.flush();
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();

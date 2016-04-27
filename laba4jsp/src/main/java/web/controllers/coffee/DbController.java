@@ -1,8 +1,8 @@
-package web.controllers;
+package web.controllers.coffee;
 
-import database.controller.Brands;
-import database.controller.Countries;
-import database.controller.Coupages;
+import database.controller.coffee.Brands;
+import database.controller.coffee.Countries;
+import database.controller.coffee.Coupages;
 import database.controller.DatabaseController;
 import org.json.JSONArray;
 import org.json.JSONObject;

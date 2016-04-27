@@ -1,4 +1,4 @@
-package database.controller;
+package database.controller.coffee;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -9,11 +9,11 @@ import java.util.Set;
 public class Coupages {
     private Set<Coupage> coupages;
 
-    Coupages() {
+    public Coupages() {
         coupages = new HashSet<>();
     }
 
-    void addCoffee(Coupage coupage) {
+    public  void addCoffee(Coupage coupage) {
         coupages.add(coupage);
     }
 

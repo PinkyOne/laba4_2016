@@ -1,13 +1,16 @@
 package database.controller;
 
 
+import database.controller.coffee.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import web.controllers.User;
 
 import java.sql.*;
 
 
 public class DatabaseController {
+
     public enum SortType {
         AZ_NAME("A-Z name"),
         ZA_NAME("Z-A name"),
@@ -36,12 +39,14 @@ public class DatabaseController {
         }
     }
 
+    // region COFFEE
     public static void setSortType(SortType sortType) {
         DatabaseController.sortType = sortType;
     }
 
     private static Connection conn;
 
+    // end region
     public static SortType getSortType() {
         return sortType;
     }
@@ -202,4 +207,119 @@ public class DatabaseController {
         statement.close();
         return coupages;
     }
+
+
+    // region ORGANIZATION
+    public static boolean addRecordToRegistrationTable(String name, String surname, String email, String login, String password) throws SQLException, ClassNotFoundException {
+        try {
+            connectDB();
+            PreparedStatement preparedStatement = conn.prepareStatement("INSERT  INTO \"Registration\" (name,surname,email,login,password) VALUES (?,?,?,?,?)");
+            preparedStatement.setString(1, name);
+            preparedStatement.setString(2, surname);
+            preparedStatement.setString(3, email);
+            preparedStatement.setString(4, login);
+            preparedStatement.setString(5, password);
+            if (preparedStatement.execute()) {
+            }
+            closeDB();
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+
+    public static JSONObject getUsers() throws SQLException, ClassNotFoundException {
+
+        connectDB();
+        Statement statement = conn.createStatement();
+
+        String selectTableSQL = "SELECT * FROM \"Registration\";";
+        // выбираем данные с БД
+        ResultSet rs = statement.executeQuery(selectTableSQL);
+        JSONObject result = new JSONObject();
+        JSONArray users = new JSONArray();
+        // И если что то было получено то цикл while сработает
+        while (rs.next()) {
+            JSONObject user = new JSONObject();
+            int userId = rs.getInt(1);
+            String name = rs.getString(2);
+            String surname = rs.getString(3);
+            String email = rs.getString(4);
+            String login = rs.getString(5);
+            String password = rs.getString(6);
+            user.put("userId", userId);
+            user.put("name", name);
+            user.put("surname", surname);
+            user.put("email", email);
+            user.put("login", login);
+            user.put("password", password);
+            users.put(user);
+        }
+        closeDB();
+        result.put("data", users);
+        closeDB();
+        return result;
+    }
+
+    public static JSONObject getContentOfForumTable() throws SQLException, ClassNotFoundException {
+
+        connectDB();
+        Statement statement = conn.createStatement();
+
+        //language=PostgreSQL
+        String selectTableSQL =
+                "SELECT \"Id_com\",\"Forum\".\"Id_user\",name,surname,date,text FROM \"Forum\" " +
+                        "JOIN \"Registration\" " +
+                        "ON \"Forum\".\"Id_user\" = \"Registration\".\"Id_user\";";
+        // выбираем данные с БД
+        ResultSet rs = statement.executeQuery(selectTableSQL);
+        JSONObject result = new JSONObject();
+        JSONArray comments = new JSONArray();
+        // И если что то было получено то цикл while сработает
+        while (rs.next()) {
+            JSONObject comment = new JSONObject();
+            int cId = rs.getInt(1);
+            comment.put("comId", cId);
+            int uId = rs.getInt(2);
+            comment.put("userId", uId);
+            comment.put("name", rs.getString(3));
+            comment.put("surname", rs.getString(4));
+            comment.put("date", rs.getDate(5).toString());
+            comment.put("text", rs.getString(6));
+            if (User.getInstance().getId() == uId) {
+                comment.put("deleteLink", "<a href = \"/delete?id=" + cId+"\" </a>");
+            }
+            comments.put(comment);
+        }
+        result.put("data", comments);
+        closeDB();
+        return result;
+    }
+
+    public static void addRecordToForumTable(int userId, String text) throws SQLException, ClassNotFoundException {
+        connectDB();
+        PreparedStatement preparedStatement = conn.prepareStatement("INSERT INTO \"Forum\" (\"Id_user\",text) VALUES (?,?)");
+        preparedStatement.setInt(1, userId);
+        preparedStatement.setString(2, text);
+        preparedStatement.execute();
+        closeDB();
+    }
+
+    public static void removeRecordRegistrationTable(String idPerson) throws SQLException, ClassNotFoundException {
+        connectDB();
+        PreparedStatement preparedStatement = conn.prepareStatement("DELETE FROM \"Registration\"  WHERE \"Id_user\" = ?");
+        preparedStatement.setInt(1, Integer.parseInt(idPerson));
+        preparedStatement.execute();
+        closeDB();
+    }
+
+    public static void removeRecordForumTable(String idPosition) throws SQLException, ClassNotFoundException {
+        connectDB();
+        PreparedStatement preparedStatement = conn.prepareStatement("DELETE FROM \"Forum\" WHERE \"Id_com\" = ?");
+        preparedStatement.setInt(1, Integer.parseInt(idPosition));
+        preparedStatement.execute();
+        closeDB();
+    }
+    // end region ORGANIZATION
 }

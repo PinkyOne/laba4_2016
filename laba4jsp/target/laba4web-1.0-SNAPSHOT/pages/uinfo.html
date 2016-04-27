@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<head>
+    <script>
+
+        function click() {
+            if (event.button == 2) {
+                alert('Копирование информации с сайта запрещено!');
+            }
+        }
+        function press() {
+            alert('Копирование информации с сайта запрещено!');
+        }
+        document.onmousedown = click;
+        document.onkeydown = press;
+    </script>
+
+
+    <script>
+        function down() {
+            var a = document.getElementById('dropdown');
+            if (a.style.display == 'none')
+                a.style.display = 'block'
+            else if (a.style.display == 'block')
+                a.style.display = 'none';
+        }
+        ;
+
+        function down1() {
+            var a = document.getElementById('dropdown1');
+            if (a.style.display == 'none')
+                a.style.display = 'block'
+            else if (a.style.display == 'block')
+                a.style.display = 'none';
+        }
+        ;
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251"/>
+    <title> Юридические онлайн-консультации </title>
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all">
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <p class="logotext"><strong> Юридические онлайн-консультации </strong><br>
+            <span class="logotext2">Качественная юридическая помощь в любое время</span></p>
+        <div id="nav">
+            <ul>
+                <li><a href="/pages/contacts.html">Контакты</a></li>
+                <li><a href="/pages/comments.jsp">Отзывы</a></li>
+                <li><a href="/pages/clients.html">Клиенты</a></li>
+                <li><a href="/pages/uinfo.html">Информация</a></li>
+                <li><a href="/pages/price.html" class="on">Цены</a></li>
+                <li><a href="/pages/judicial.html">Юр. лицам</a></li>
+                <li><a href="/pages/physical.html">Физ. лицам</a></li>
+                <li><a href="/pages/index.html">Главная</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div id="left">
+            <p>Полезные ссылки</p>
+            <ul>
+                <li><a href="http://www.consultant.ru/">Консультант плюс</a></li>
+                <li><a href="http://law.edu.ru/">Федеральный правовой портал</a></li>
+                <li><a href="http://sudact.ru/">Судебные и нормативные акты РФ</a></li>
+                <li><a href="http://pravo.gov.ru/">Официальный интернет-портал правовой информации</a></li>
+            </ul>
+
+            <ul>
+                <table id="calendars">
+                    <thead>
+                    <tr>
+                        <td>‹
+                        <td colspan="5">
+                        <td>›
+                    <tr>
+                        <td>Пн
+                        <td>Вт
+                        <td>Ср
+                        <td>Чт
+                        <td>Пт
+                        <td>Сб
+                        <td>Вс
+                    <tbody>
+                </table>
+                <script src="/assets/js/table.js"></script>
+            </ul>
+
+        </div>
+        <div class="content">
+
+            <div id="right">
+                <h2>Полезная информация</h2>
+                <div class="droplink">
+                    <a class="socialbutton" onclick="down()">Список документов для оформления налогового вычета при
+                        покупке квартиры</a>
+                    <ol id="dropdown" style="display:none">
+                        <li><a href="#">Свидетельство о постановке на учёт в налоговом органе</a></li>
+                        <li><a href="#">Налоговая декларация по форме 3-НДФЛ</a></li>
+                        <li><a href="#">Паспорт или документ его заменяющий</a></li>
+                        <li><a href="#">Справка о доходах по форме 2-НДФЛ</a></li>
+                        <li><a href="#">Заявление на возврат налога с реквизитами счета, на который налоговая перечислит
+                            Вам деньги</a></li>
+                        <li><a href="#">Договор купли-продажи или договор долевого участия</a></li>
+                        <li><a href="#">Платежные документы, подтверждающие факт оплаты жилья</a></li>
+                        <li><a href="#">Свидетельство о государственной регистрации права собственности</a></li>
+                        <li><a href="#">Акт приема-передачи жилья</a></li>
+                    </ol>
+                    <hr/>
+
+                    <a class="socialbutton" onclick="down1()">Список документов для оформления налогового вычета на
+                        обучение</a>
+                    <ol id="dropdown1" style="display:none">
+                        <li><a href="#">Свидетельство о постановке на учёт в налоговом органе</a></li>
+                        <li><a href="#">Налоговая декларация по форме 3-НДФЛ</a></li>
+                        <li><a href="#">Паспорт или документ его заменяющий</a></li>
+                        <li><a href="#">Справка о доходах по форме 2-НДФЛ</a></li>
+                        <li><a href="#">Заявление на возврат налога с реквизитами счета, на который налоговая перечислит
+                            Вам деньги</a></li>
+                        <li><a href="#">Договор с учебный заведением, в котором указана стоимость обучения</a></li>
+                        <li><a href="#">Лицензия учебного заведения, подтверждающая его статус</a></li>
+                        <li><a href="#">Платежные документы, подтверждающие факт оплаты обучения</a></li>
+                    </ol>
+                    <hr/>
+
+                </div>
+            </div>
+            <br/>
+            <br class="clear">
+            <div class="bottom">
+                <p>Designed by Ilona Kharkovskaya. All content copyright &copy; 2015, all rights reserved. Layout
+                    created at <a href="http://cssweblayouts.com" target="_blank">CSSWebLayouts.</a><br/>
+
+            </div>
+        </div>
+        <div id="footer"><img src="/assets/images/footer.gif"></div>
+    </div>
+</body>
+
+
+</html>

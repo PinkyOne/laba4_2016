@@ -8,7 +8,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc33a729-1afb-4365-89c1-051d5246c44e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/database/controller/Database.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/database/controller/Brands.java" afterPath="$PROJECT_DIR$/src/main/java/database/controller/coffee/Brands.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/database/controller/Coffee.java" afterPath="$PROJECT_DIR$/src/main/java/database/controller/coffee/Coffee.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/database/controller/Countries.java" afterPath="$PROJECT_DIR$/src/main/java/database/controller/coffee/Countries.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/database/controller/Country.java" afterPath="$PROJECT_DIR$/src/main/java/database/controller/coffee/Country.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/database/controller/Coupage.java" afterPath="$PROJECT_DIR$/src/main/java/database/controller/coffee/Coupage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/database/controller/Coupages.java" afterPath="$PROJECT_DIR$/src/main/java/database/controller/coffee/Coupages.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/web/controllers/CoffeeController.java" afterPath="$PROJECT_DIR$/src/main/java/web/controllers/coffee/CoffeeController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/web/controllers/CountryController.java" afterPath="$PROJECT_DIR$/src/main/java/web/controllers/coffee/CountryController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/web/controllers/CountryJoinCoffeeController.java" afterPath="$PROJECT_DIR$/src/main/java/web/controllers/coffee/CountryJoinCoffeeController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/web/controllers/CoupageController.java" afterPath="$PROJECT_DIR$/src/main/java/web/controllers/coffee/CoupageController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/web/controllers/DbController.java" afterPath="$PROJECT_DIR$/src/main/java/web/controllers/coffee/DbController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java" afterPath="$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT/index.jsp" afterPath="$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT/index.jsp" />
     </list>
     <ignored path="laba4web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,6 +80,24 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Registration" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PostgreSQL - postgres@52.38.201.160" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -73,152 +106,147 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file leaf-file-name="registration.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/registration.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2569">
-              <caret line="158" column="51" selection-start-line="158" selection-start-column="51" selection-end-line="158" selection-end-column="51" />
+            <state relative-caret-position="1207">
+              <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OraganizationController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/OraganizationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="74" column="52" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check_c.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/check_c.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="291" column="1" selection-start-line="291" selection-start-column="1" selection-end-line="291" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#SortType#0;class#DatabaseController#0" expanded="false" />
+                <marker date="1461727561599" expanded="true" signature="2276:2340" placeholder="INSERT INTO coffee... " />
+                <marker date="1461727561599" expanded="true" signature="2533:2637" placeholder="INSERT INTO coffee... " />
+                <marker date="1461727561599" expanded="true" signature="2533:2639" placeholder="INSERT INTO coffee... " />
+                <marker date="1461727561599" expanded="true" signature="4042:4130" placeholder="SELECT coffe... " />
+                <marker date="1461727561599" expanded="true" signature="4042:4168" placeholder="SELECT coffe... " />
+                <marker date="1461727561599" expanded="true" signature="4042:4181" placeholder="SELECT coffe... " />
+                <marker date="1461727561599" expanded="true" signature="4042:4185" placeholder="SELECT coffe... " />
+                <marker date="1461727561599" expanded="true" signature="4042:4234" placeholder="SELECT coffe... " />
+                <marker date="1461727561599" expanded="true" signature="4042:4406" placeholder="SELECT coffe... coffee" />
+                <marker date="1461727561599" expanded="true" signature="4042:4440" placeholder="SELECT coffe... coffee" />
+                <marker date="1461727561599" expanded="true" signature="4042:4493" placeholder="SELECT coffe... coffee" />
+                <marker date="1461727561599" expanded="true" signature="4042:4494" placeholder="SELECT coffe... coffee" />
+                <marker date="1461727561599" expanded="true" signature="4042:4524" placeholder="SELECT coffe... coffee" />
+                <marker date="1461727561599" expanded="true" signature="4042:4542" placeholder="SELECT coffe... " />
+                <marker date="1461727561599" expanded="true" signature="5203:5217" placeholder="SELECT * FRO... coffee" />
+                <marker date="1461727561599" expanded="true" signature="5203:5223" placeholder="SELECT * FRO... coffee" />
+                <marker date="1461727561599" expanded="true" signature="5203:5224" placeholder="SELECT * FRO... product" />
+                <marker date="1461727561599" expanded="true" signature="5784:5798" placeholder="SELECT * FRO... country" />
+                <marker date="1461727561599" expanded="true" signature="5784:5805" placeholder="SELECT * FRO... country" />
+                <marker date="1461727561599" expanded="true" signature="6241:6271" placeholder="DELETE FROM " />
+                <marker date="1461727561599" expanded="true" signature="6503:6517" placeholder="SELECT * FRO... coffee" />
+                <marker date="1461727561599" expanded="true" signature="6503:6524" placeholder="SELECT * FRO... coupage" />
+                <marker date="1461727561599" expanded="true" signature="7238:7322" placeholder="INSERT INTO Registration" />
+                <marker date="1461727561599" expanded="true" signature="7966:7996" placeholder="SELECT * FRO... Registration" />
+                <marker date="1461727561599" expanded="true" signature="9222:9299" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9333" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9348" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9350" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9382" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9390" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9393" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9402" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9406" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9421" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9424" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9433" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9435" placeholder="SELECT * FRO... Forum" />
+                <marker date="1461727561599" expanded="true" signature="9222:9436" placeholder="SELECT \&quot; FR... " />
+                <marker date="1461727561599" expanded="true" signature="10622:10675" placeholder="INSERT INTO \&quot;Forum\&quot;... " />
+                <marker date="1461727561599" expanded="true" signature="11039:11090" placeholder="DELETE FROM " />
+                <marker date="1461727561599" expanded="true" signature="11423:11465" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteCommentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/DeleteCommentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComentsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/ComentsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comments.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/comments.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="129" column="9" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/coffee/DbController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="CountryJoinCoffeeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/CountryJoinCoffeeController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/coffee/CountryJoinCoffeeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CoupageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/CoupageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postgres.public.coffee" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/a7de73d1/89b628f6-10ee-4183-842b-a2b7adc7c73c/postgres.public.coffee">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Coupage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/Coupage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
               <folding>
-                <element signature="e#340#341#0" expanded="false" />
-                <element signature="e#365#366#0" expanded="false" />
-                <element signature="e#396#397#0" expanded="false" />
-                <element signature="e#426#427#0" expanded="false" />
-                <element signature="e#457#458#0" expanded="false" />
-                <element signature="e#487#488#0" expanded="false" />
-                <element signature="e#518#519#0" expanded="false" />
-                <element signature="e#545#546#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/DbController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-              <folding>
-                <element signature="e#449#450#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#1025#1026#0" expanded="true" />
-                <element signature="e#1056#1057#0" expanded="true" />
-                <marker date="1461707253442" expanded="true" signature="2170:2234" placeholder="INSERT INTO coffee... " />
-                <marker date="1461707253442" expanded="true" signature="2427:2531" placeholder="INSERT INTO coffee... " />
-                <marker date="1461707253442" expanded="true" signature="2427:2533" placeholder="INSERT INTO coffee... " />
-                <marker date="1461707253442" expanded="true" signature="3936:4024" placeholder="SELECT coffe... " />
-                <marker date="1461707253442" expanded="true" signature="3936:4062" placeholder="SELECT coffe... " />
-                <marker date="1461707253442" expanded="true" signature="3936:4075" placeholder="SELECT coffe... " />
-                <marker date="1461707253442" expanded="true" signature="3936:4079" placeholder="SELECT coffe... " />
-                <marker date="1461707253442" expanded="true" signature="3936:4128" placeholder="SELECT coffe... " />
-                <marker date="1461707253442" expanded="true" signature="3936:4300" placeholder="SELECT coffe... coffee" />
-                <marker date="1461707253442" expanded="true" signature="3936:4334" placeholder="SELECT coffe... coffee" />
-                <marker date="1461707253442" expanded="true" signature="3936:4387" placeholder="SELECT coffe... coffee" />
-                <marker date="1461707253442" expanded="true" signature="3936:4388" placeholder="SELECT coffe... coffee" />
-                <marker date="1461707253442" expanded="true" signature="3936:4418" placeholder="SELECT coffe... coffee" />
-                <marker date="1461707253442" expanded="true" signature="3936:4436" placeholder="SELECT coffe... " />
-                <marker date="1461707253442" expanded="true" signature="5097:5111" placeholder="SELECT * FRO... coffee" />
-                <marker date="1461707253442" expanded="true" signature="5097:5117" placeholder="SELECT * FRO... coffee" />
-                <marker date="1461707253442" expanded="true" signature="5097:5118" placeholder="SELECT * FRO... product" />
-                <marker date="1461707253442" expanded="true" signature="5678:5692" placeholder="SELECT * FRO... country" />
-                <marker date="1461707253442" expanded="true" signature="5678:5699" placeholder="SELECT * FRO... country" />
-                <marker date="1461707253442" expanded="true" signature="6135:6165" placeholder="DELETE FROM " />
-                <marker date="1461707253442" expanded="true" signature="6397:6411" placeholder="SELECT * FRO... coffee" />
-                <marker date="1461707253442" expanded="true" signature="6397:6418" placeholder="SELECT * FRO... coupage" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Coupages.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/Coupages.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Countries.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/Countries.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#220#221#0" expanded="false" />
-                <element signature="e#263#264#0" expanded="false" />
-                <element signature="e#310#311#0" expanded="false" />
-                <element signature="e#348#349#0" expanded="false" />
+                <element signature="e#426#427#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -269,10 +297,32 @@
         <option value="$PROJECT_DIR$/src/main/java/database/controller/Coupages.java" />
         <option value="$PROJECT_DIR$/src/main/java/database/controller/Brands.java" />
         <option value="$PROJECT_DIR$/src/main/java/web/controllers/DbController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/web/controllers/CountryJoinCoffeeController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/web/controllers/coffee/DbController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/database/controller/coffee/Coupages.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/assets/js/table.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/assets/js/check_q.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/comments.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/registration.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/assets/js/check_c.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/uinfo.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/contacts.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/physical.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/price.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/judicial.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/clients.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/registration.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/web/controllers/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/web/controllers/OraganizationController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/check_c.js" />
+        <option value="$PROJECT_DIR$/src/main/java/web/controllers/ComentsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/web/controllers/DeleteCommentController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/comments.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java" />
       </list>
     </option>
   </component>
@@ -368,6 +418,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4web-1.0-SNAPSHOT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4web-1.0-SNAPSHOT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4web-1.0-SNAPSHOT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -481,7 +597,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -550,6 +722,36 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coffee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -577,6 +779,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laba4jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coffee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -596,16 +828,18 @@
     <property name="last_opened_file_path" value="G:/Dropbox/Dropbox/ilona/Lab4/Lab4" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alex\Documents\GitHub\laba4_2016\laba4jsp\src\main\webapp\pages" />
       <recent name="C:\Users\Alex\Documents\GitHub\laba4_2016\laba4jsp\src\main\webapp" />
+      <recent name="C:\Users\Alex\Documents\GitHub\laba4_2016\laba4jsp\web\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="web.controllers" />
       <recent name="database.controller" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alex\Documents\GitHub\laba4_2016\laba4jsp\src\main\webapp\lib" />
       <recent name="C:\Users\Alex\Documents\GitHub\laba4_2016\laba4jsp\src\main\webapp" />
-      <recent name="C:\Users\Alex\Documents\GitHub\laba4_2016\laba4jsp\web\lib" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
@@ -1138,7 +1372,7 @@
     </configuration>
     <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M3" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://127.0.0.1:8080/db" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://127.0.0.1:8080/org" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
@@ -1247,46 +1481,46 @@
       <workItem from="1461509576138" duration="8301000" />
       <workItem from="1461523666270" duration="6283000" />
       <workItem from="1461627051661" duration="2602000" />
-      <workItem from="1461693305479" duration="14268000" />
+      <workItem from="1461693305479" duration="32952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48394000" />
+    <option name="totallyTimeSpent" value="67078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.12540454" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14320388" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15614887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29411766" sideWeight="0.4935275" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.12540454" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14320388" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.87459546" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1933657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3616505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15614887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.487055" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29642445" sideWeight="0.4935275" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1302,7 +1536,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <option name="time" value="34" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1311,213 +1545,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/CountryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/laba4web.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/CoffeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="109" column="45" selection-start-line="109" selection-start-column="45" selection-end-line="109" selection-end-column="45" />
-          <folding>
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <marker date="1461707253442" expanded="true" signature="2170:2234" placeholder="INSERT INTO coffee... " />
-            <marker date="1461707253442" expanded="true" signature="2427:2531" placeholder="INSERT INTO coffee... " />
-            <marker date="1461707253442" expanded="true" signature="2427:2533" placeholder="INSERT INTO coffee... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4024" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4062" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4075" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4079" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4128" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4300" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4334" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4387" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4388" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4418" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4436" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="5097:5111" placeholder="SELECT * FRO... coffee" />
-            <marker date="1461707253442" expanded="true" signature="5097:5117" placeholder="SELECT * FRO... coffee" />
-            <marker date="1461707253442" expanded="true" signature="5097:5118" placeholder="SELECT * FRO... product" />
-            <marker date="1461707253442" expanded="true" signature="5678:5692" placeholder="SELECT * FRO... country" />
-            <marker date="1461707253442" expanded="true" signature="5678:5699" placeholder="SELECT * FRO... country" />
-            <marker date="1461707253442" expanded="true" signature="6135:6165" placeholder="DELETE FROM " />
-            <marker date="1461707253442" expanded="true" signature="6397:6411" placeholder="SELECT * FRO... coffee" />
-            <marker date="1461707253442" expanded="true" signature="6397:6418" placeholder="SELECT * FRO... coupage" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cdefe087-60e4-4302-a9e1-70915b8d8854/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar!/com/google/gson/JsonArray.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/DbController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/CountryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/laba4web.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/CoffeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <marker date="1461707253442" expanded="true" signature="2170:2234" placeholder="INSERT INTO coffee... " />
-            <marker date="1461707253442" expanded="true" signature="2427:2531" placeholder="INSERT INTO coffee... " />
-            <marker date="1461707253442" expanded="true" signature="2427:2533" placeholder="INSERT INTO coffee... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4024" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4062" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4075" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4079" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4128" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4300" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4334" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4387" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4388" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4418" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4436" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="5097:5111" placeholder="SELECT * FRO... coffee" />
-            <marker date="1461707253442" expanded="true" signature="5097:5117" placeholder="SELECT * FRO... coffee" />
-            <marker date="1461707253442" expanded="true" signature="5097:5118" placeholder="SELECT * FRO... product" />
-            <marker date="1461707253442" expanded="true" signature="5678:5692" placeholder="SELECT * FRO... country" />
-            <marker date="1461707253442" expanded="true" signature="5678:5699" placeholder="SELECT * FRO... country" />
-            <marker date="1461707253442" expanded="true" signature="6135:6165" placeholder="DELETE FROM " />
-            <marker date="1461707253442" expanded="true" signature="6397:6411" placeholder="SELECT * FRO... coffee" />
-            <marker date="1461707253442" expanded="true" signature="6397:6418" placeholder="SELECT * FRO... coupage" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cdefe087-60e4-4302-a9e1-70915b8d8854/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar!/com/google/gson/JsonArray.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/DbController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar!/com/google/gson/JsonArray.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laba4web.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="dbDummy://dbtable:/a7de73d1/cdefe087-60e4-4302-a9e1-70915b8d8854/postgres.public.coupage" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cdefe087-60e4-4302-a9e1-70915b8d8854/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/89b628f6-10ee-4183-842b-a2b7adc7c73c/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1525,25 +1552,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/Countries.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/coffee/Countries.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#232#233#0" expanded="false" />
-            <element signature="e#257#258#0" expanded="false" />
-            <element signature="e#288#289#0" expanded="false" />
-            <element signature="e#315#316#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1570,30 +1584,6 @@
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/Coffee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/CoffeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1638,20 +1628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/Brands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#210#211#0" expanded="false" />
-            <element signature="e#250#251#0" expanded="false" />
-            <element signature="e#294#295#0" expanded="false" />
-            <element signature="e#328#329#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT — копия/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1665,31 +1641,6 @@
         <state relative-caret-position="34">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/CountryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/Coupage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding>
-            <element signature="e#340#341#0" expanded="false" />
-            <element signature="e#365#366#0" expanded="false" />
-            <element signature="e#396#397#0" expanded="false" />
-            <element signature="e#426#427#0" expanded="false" />
-            <element signature="e#457#458#0" expanded="false" />
-            <element signature="e#487#488#0" expanded="false" />
-            <element signature="e#518#519#0" expanded="false" />
-            <element signature="e#545#546#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1714,20 +1665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/Countries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#220#221#0" expanded="false" />
-            <element signature="e#263#264#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#348#349#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index2.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
@@ -1736,46 +1673,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/coffee/CoffeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding>
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <marker date="1461707253442" expanded="true" signature="2170:2234" placeholder="INSERT INTO coffee... " />
-            <marker date="1461707253442" expanded="true" signature="2427:2531" placeholder="INSERT INTO coffee... " />
-            <marker date="1461707253442" expanded="true" signature="2427:2533" placeholder="INSERT INTO coffee... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4024" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4062" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4075" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4079" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4128" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="3936:4300" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4334" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4387" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4388" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4418" placeholder="SELECT coffe... coffee" />
-            <marker date="1461707253442" expanded="true" signature="3936:4436" placeholder="SELECT coffe... " />
-            <marker date="1461707253442" expanded="true" signature="5097:5111" placeholder="SELECT * FRO... coffee" />
-            <marker date="1461707253442" expanded="true" signature="5097:5117" placeholder="SELECT * FRO... coffee" />
-            <marker date="1461707253442" expanded="true" signature="5097:5118" placeholder="SELECT * FRO... product" />
-            <marker date="1461707253442" expanded="true" signature="5678:5692" placeholder="SELECT * FRO... country" />
-            <marker date="1461707253442" expanded="true" signature="5678:5699" placeholder="SELECT * FRO... country" />
-            <marker date="1461707253442" expanded="true" signature="6135:6165" placeholder="DELETE FROM " />
-            <marker date="1461707253442" expanded="true" signature="6397:6411" placeholder="SELECT * FRO... coffee" />
-            <marker date="1461707253442" expanded="true" signature="6397:6418" placeholder="SELECT * FRO... coupage" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/Coupages.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/coffee/CountryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/coffee/CoupageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/coffee/Brands.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -1783,43 +1705,329 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/DbController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/coffee/Coffee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="42" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/CoupageController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/coffee/Countries.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/CountryJoinCoffeeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/coffee/Country.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/main.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/coffee/Coupage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/coffee/Coupages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#350#351#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/assets/js/table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/assets/js/choose.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/assets/js/check_q.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/assets/js/check_em.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="482" column="12" selection-start-line="482" selection-start-column="12" selection-end-line="482" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2569">
-          <caret line="158" column="51" selection-start-line="158" selection-start-column="51" selection-end-line="158" selection-end-column="51" />
+        <state relative-caret-position="-1258">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/laba4web-1.0-SNAPSHOT/pages/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="129" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/assets/js/check_c.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/uinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/physical.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/price.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/judicial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/clients.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="100" column="44" selection-start-line="96" selection-start-column="7" selection-end-line="100" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a7de73d1/89b628f6-10ee-4183-842b-a2b7adc7c73c/postgres.public.Registration">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/check_c.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/coffee/DbController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/coffee/CountryJoinCoffeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="e#426#427#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/OraganizationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="74" column="52" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/comments.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="129" column="9" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/DeleteCommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/web/controllers/ComentsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/controller/DatabaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="291" column="1" selection-start-line="291" selection-start-column="1" selection-end-line="291" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#SortType#0;class#DatabaseController#0" expanded="false" />
+            <marker date="1461727561599" expanded="true" signature="2276:2340" placeholder="INSERT INTO coffee... " />
+            <marker date="1461727561599" expanded="true" signature="2533:2637" placeholder="INSERT INTO coffee... " />
+            <marker date="1461727561599" expanded="true" signature="2533:2639" placeholder="INSERT INTO coffee... " />
+            <marker date="1461727561599" expanded="true" signature="4042:4130" placeholder="SELECT coffe... " />
+            <marker date="1461727561599" expanded="true" signature="4042:4168" placeholder="SELECT coffe... " />
+            <marker date="1461727561599" expanded="true" signature="4042:4181" placeholder="SELECT coffe... " />
+            <marker date="1461727561599" expanded="true" signature="4042:4185" placeholder="SELECT coffe... " />
+            <marker date="1461727561599" expanded="true" signature="4042:4234" placeholder="SELECT coffe... " />
+            <marker date="1461727561599" expanded="true" signature="4042:4406" placeholder="SELECT coffe... coffee" />
+            <marker date="1461727561599" expanded="true" signature="4042:4440" placeholder="SELECT coffe... coffee" />
+            <marker date="1461727561599" expanded="true" signature="4042:4493" placeholder="SELECT coffe... coffee" />
+            <marker date="1461727561599" expanded="true" signature="4042:4494" placeholder="SELECT coffe... coffee" />
+            <marker date="1461727561599" expanded="true" signature="4042:4524" placeholder="SELECT coffe... coffee" />
+            <marker date="1461727561599" expanded="true" signature="4042:4542" placeholder="SELECT coffe... " />
+            <marker date="1461727561599" expanded="true" signature="5203:5217" placeholder="SELECT * FRO... coffee" />
+            <marker date="1461727561599" expanded="true" signature="5203:5223" placeholder="SELECT * FRO... coffee" />
+            <marker date="1461727561599" expanded="true" signature="5203:5224" placeholder="SELECT * FRO... product" />
+            <marker date="1461727561599" expanded="true" signature="5784:5798" placeholder="SELECT * FRO... country" />
+            <marker date="1461727561599" expanded="true" signature="5784:5805" placeholder="SELECT * FRO... country" />
+            <marker date="1461727561599" expanded="true" signature="6241:6271" placeholder="DELETE FROM " />
+            <marker date="1461727561599" expanded="true" signature="6503:6517" placeholder="SELECT * FRO... coffee" />
+            <marker date="1461727561599" expanded="true" signature="6503:6524" placeholder="SELECT * FRO... coupage" />
+            <marker date="1461727561599" expanded="true" signature="7238:7322" placeholder="INSERT INTO Registration" />
+            <marker date="1461727561599" expanded="true" signature="7966:7996" placeholder="SELECT * FRO... Registration" />
+            <marker date="1461727561599" expanded="true" signature="9222:9299" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9333" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9348" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9350" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9382" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9390" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9393" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9402" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9406" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9421" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9424" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9433" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9435" placeholder="SELECT * FRO... Forum" />
+            <marker date="1461727561599" expanded="true" signature="9222:9436" placeholder="SELECT \&quot; FR... " />
+            <marker date="1461727561599" expanded="true" signature="10622:10675" placeholder="INSERT INTO \&quot;Forum\&quot;... " />
+            <marker date="1461727561599" expanded="true" signature="11039:11090" placeholder="DELETE FROM " />
+            <marker date="1461727561599" expanded="true" signature="11423:11465" placeholder="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
