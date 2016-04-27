@@ -16,6 +16,8 @@ public class DeleteCommentController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
             DatabaseController.removeRecordForumTable(req.getParameter("id"));
+            req.setAttribute("isLoggedIn", User.getInstance().getId()>0);
+
             req.getRequestDispatcher("/pages/comments.jsp").forward(req, resp);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();

@@ -288,8 +288,9 @@ public class DatabaseController {
             comment.put("date", rs.getDate(5).toString());
             comment.put("text", rs.getString(6));
             if (User.getInstance().getId() == uId) {
-                comment.put("deleteLink", "<a href = \"/delete?id=" + cId+"\" </a>");
-            }
+                comment.put("test", true);
+                comment.put("deleteLink", "/delete?id=" + cId);
+            } else comment.put("test", false);
             comments.put(comment);
         }
         result.put("data", comments);

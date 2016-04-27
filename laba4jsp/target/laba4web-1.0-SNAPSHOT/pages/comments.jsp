@@ -80,7 +80,7 @@
             </form>
         </div>
 
-        <div class="welcome">
+        <div class="welcome" id="login_form">
             <c:if test="${isLoggedIn==false||isLoggedIn==null}">
 
                 <p>Войдите чтобы оставить комментарий</p>
@@ -123,7 +123,10 @@
     {{#each data}}
     <span class="postinfo"> Posted by {{name}} {{surname}} on {{date}} <br/>
         <p>{{text}}</p>
-        <p>{{deleteLink}}</p>
+         {{~#if test}}
+            <p><a href="{{deleteLink}}">Удалить комментарий</a></p>
+            {{~^~}}
+         {{~/if~}}
         <hr/>
     </span>
     {{/each}}

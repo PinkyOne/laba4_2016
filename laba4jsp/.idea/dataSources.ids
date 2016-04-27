@@ -11,7 +11,7 @@
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
         <introspection-state-number>721</introspection-state-number>
-        <introspection-timestamp>2016-04-27.00:19:34.147</introspection-timestamp>
+        <introspection-timestamp>2016-04-27.21:08:11.276</introspection-timestamp>
       </schema>
       <sequence id="3" parent="2" name="coffee_seq">
         <object-id>16386</object-id>

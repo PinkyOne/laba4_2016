@@ -1,8 +1,8 @@
 $(document).ready(function () {
     function check() {
-        var x = document.forms["myForm"]["username"].value;
+        var x = document.forms["myForm"]["login"].value;
         var p = document.forms["myForm"]["password"].value;
-        var y = document.forms["myForm"]["names"].value;
+        var y = document.forms["myForm"]["name"].value;
         var z = document.forms["myForm"]["surname"].value;
         var email = document.forms["myForm"]["email"].value;
         if (x == null || x == "" || p == null || p == "" || y == null || y == "" || z == null || z == "") {
@@ -27,6 +27,9 @@ $(document).ready(function () {
         $.ajax(options);
     }
 
+    $(window).load(function () {
+        getComments();
+    });
     $('#registrationForm').submit(function () {
         check();
         var ajax_data = {};
@@ -41,7 +44,9 @@ $(document).ready(function () {
             url: "/org", //this is my servlet
             data: ajax_data,
             success: function (response) {
-                $('#reg_html').html(response);
+                var success = $($(response)).filter("#wrapper").find('#right');
+                console.log(success);
+                $('#reg_html').find('#right').html(success);
             }
         };
 
@@ -63,7 +68,10 @@ $(document).ready(function () {
             url: "/org", //this is my servlet
             data: ajax_data,
             success: function (response) {
-                $('#com_html').html(response)
+                var success = $($(response)).filter("#wrapper").find('#login_form');
+                console.log(success);
+                $('#com_html').find('#login_form').html(success);
+                getComments();
             }
         };
 

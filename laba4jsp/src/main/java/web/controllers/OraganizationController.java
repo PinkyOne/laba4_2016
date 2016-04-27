@@ -71,6 +71,8 @@ public class OraganizationController extends HttpServlet {
                 }
                 break;
                 case "logout": {
+                    User.getInstance().setId(-1);
+                    User.getInstance().setLoggedIn(false);
                     req.setAttribute("isLoggedIn", false);
                     req.getRequestDispatcher("/pages/comments.jsp").forward(req, resp);
                 }
