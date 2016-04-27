@@ -289,7 +289,7 @@ public class DatabaseController {
             comment.put("text", rs.getString(6));
             if (User.getInstance().getId() == uId) {
                 comment.put("test", true);
-                comment.put("deleteLink", "/delete?id=" + cId);
+                comment.put("deleteLink", "/ilona/delete?id=" + cId);
             } else comment.put("test", false);
             comments.put(comment);
         }

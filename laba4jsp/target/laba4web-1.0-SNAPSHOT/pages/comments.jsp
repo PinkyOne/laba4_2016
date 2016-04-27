@@ -10,10 +10,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251"/>
     <title> Юридические онлайн-консультации </title>
-    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/ilona/assets/css/style.css" type="text/css" media="all">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script src="/assets/js/check_c.js"></script>
+    <script src="/ilona/assets/js/check_c.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -22,14 +22,14 @@
             <span class="logotext2">Качественная юридическая помощь в любое время</span></p>
         <div id="nav">
             <ul>
-                <li><a href="/pages/contacts.html">Контакты</a></li>
-                <li><a href="/pages/comments.jsp">Отзывы</a></li>
-                <li><a href="/pages/clients.html">Клиенты</a></li>
-                <li><a href="/pages/uinfo.html">Информация</a></li>
-                <li><a href="/pages/price.html" class="on">Цены</a></li>
-                <li><a href="/pages/judicial.html">Юр. лицам</a></li>
-                <li><a href="/pages/physical.html">Физ. лицам</a></li>
-                <li><a href="/pages/index.html">Главная</a></li>
+                <li><a href="/ilona/pages/contacts.html">Контакты</a></li>
+                <li><a href="/ilona/pages/comments.jsp">Отзывы</a></li>
+                <li><a href="/ilona/pages/clients.html">Клиенты</a></li>
+                <li><a href="/ilona/pages/uinfo.html">Информация</a></li>
+                <li><a href="/ilona/pages/price.html" class="on">Цены</a></li>
+                <li><a href="/ilona/pages/judicial.html">Юр. лицам</a></li>
+                <li><a href="/ilona/pages/physical.html">Физ. лицам</a></li>
+                <li><a href="/ilona/pages/index.html">Главная</a></li>
             </ul>
         </div>
     </div>
@@ -62,7 +62,7 @@
                         <tbody>
                     </table>
                 </li>
-                <script src="/assets/js/table.js"></script>
+                <script src="/ilona/assets/js/table.js"></script>
             </ul>
 
         </div>
@@ -94,14 +94,14 @@
                     <button class="login" name="action" value="login">Войти</button>
                     <br/>
                     <small>
-                        <a href="">Забыли пароль?</a> | <a href="/pages/registration.jsp">Зарегистрироваться</a>
+                        <a href="">Забыли пароль?</a> | <a href="/ilona/pages/registration.jsp">Зарегистрироваться</a>
                     </small>
                 </form>
             </c:if>
             <c:if test="${isLoggedIn==true}">
                 <hr/>
                 <strong>Вы уже залогинены</strong>
-                <form action="/org" name="myForm" method="post" id="logoutForm">
+                <form action="/ilona/org" name="myForm" method="post" id="logoutForm">
                     <button name="action" value="logout">Выйти</button>
                 </form>
             </c:if>
@@ -114,7 +114,7 @@
 
         </div>
     </div>
-    <div id="footer"><img src="/assets/images/footer.gif"></div>
+    <div id="footer"><img src="/ilona/assets/images/footer.gif"></div>
 </div>
 </body>
 

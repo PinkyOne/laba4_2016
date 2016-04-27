@@ -41,7 +41,7 @@ $(document).ready(function () {
 
         var options = {
             type: "post",
-            url: "/org", //this is my servlet
+            url: "/ilona/org", //this is my servlet
             data: ajax_data,
             success: function (response) {
                 var success = $($(response)).filter("#wrapper").find('#right');
@@ -65,7 +65,7 @@ $(document).ready(function () {
 
         var options = {
             type: "post",
-            url: "/org", //this is my servlet
+            url: "/ilona/org", //this is my servlet
             data: ajax_data,
             success: function (response) {
                 var success = $($(response)).filter("#wrapper").find('#login_form');
@@ -90,7 +90,7 @@ $(document).ready(function () {
     function getComments() {
         var options = {
             type: "get",
-            url: "/comments", //this is my servlet
+            url: "/ilona/comments", //this is my servlet
             success: function (response) {
                 refreshComments(response)
             }
@@ -109,7 +109,7 @@ $(document).ready(function () {
 
         var options = {
             type: "post",
-            url: "/org", //this is my servlet
+            url: "/ilona/org", //this is my servlet
             data: ajax_data,
             success: function (response) {
                 getComments();
