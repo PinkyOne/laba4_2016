@@ -2,10 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/webapp/assets/js/check_c.js" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/pages/assets/css/style.css" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/pages/assets/js/check_c.js" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/pages/assets/js/check_q.js" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/pages/assets/js/table.js" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/assets/js/table.js" charset="windows-1251" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

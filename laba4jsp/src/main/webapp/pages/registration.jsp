@@ -28,7 +28,7 @@
                 <li><a href="/ilona/pages/comments.jsp">Отзывы</a></li>
                 <li><a href="/ilona/pages/clients.html">Клиенты</a></li>
                 <li><a href="/ilona/pages/uinfo.html">Информация</a></li>
-                <li><a href="/ilona/pages/price.html" class="on">Цены</a></li>
+                <li><a href="/ilona/pages/price.html" >Цены</a></li>
                 <li><a href="/ilona/pages/judicial.html">Юр. лицам</a></li>
                 <li><a href="/ilona/pages/physical.html">Физ. лицам</a></li>
                 <li><a href="/ilona/pages/index.html">Главная</a></li>
@@ -62,7 +62,7 @@
                         <td>Вс
                     <tbody>
                 </table>
-                <script src="/ilona/assets/js/table.js"></script>
+                <script src="/ilona/assets/js/table.js" charset="windows-1251"></script>
             </ul>
 
         </div>
